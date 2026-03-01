@@ -1,4 +1,3 @@
-// --- Firebase (CDN modules) ---
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
   getAuth,
@@ -13,10 +12,12 @@ import {
   addDoc,
   doc,
   updateDoc,
-  serverTimestamp
+  deleteDoc,
+  serverTimestamp,
+  query,
+  orderBy
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// Your config (public; protected by Auth + Firestore Rules)
 const firebaseConfig = {
   apiKey: "AIzaSyD5jk9FcywvGBNRLGlSHeLFnbTXcOBYDCc",
   authDomain: "flashcards-srs.firebaseapp.com",
@@ -30,156 +31,172 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
 
-// --- UI helpers ---
 const $ = (id) => document.getElementById(id);
-const loginCard = $("loginCard");
-const addCard = $("addCard");
-const studyCard = $("studyCard");
 
 let user = null;
-let cards = [];      // loaded from Firestore
-let current = null;  // current card object
+let cards = [];
+let current = null;
 let revealed = false;
 
-// --- SRS helpers (simple + effective) ---
-function today0() {
-  const d = new Date(); d.setHours(0,0,0,0); return d.getTime();
-}
-function daysFromNow(days) {
-  const d = new Date(); d.setHours(0,0,0,0); d.setDate(d.getDate()+days); return d.getTime();
-}
-function clamp(n,a,b){ return Math.max(a, Math.min(b,n)); }
+// ---------- Time helpers ----------
+function today0() { const d=new Date(); d.setHours(0,0,0,0); return d.getTime(); }
+function daysFromNow(days){ const d=new Date(); d.setHours(0,0,0,0); d.setDate(d.getDate()+days); return d.getTime(); }
 
-// grade: 0 Again, 5 Easy
-function applySRS(card, grade) {
-  let ease = card.ease ?? 2.5;
-  let reps = card.reps ?? 0;
-  let interval = card.intervalDays ?? 0;
-  let lapses = card.lapses ?? 0;
-
-  // SM-2-ish ease update
-  const q = clamp(grade, 0, 5);
-  ease = ease + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
-  ease = clamp(ease, 1.3, 2.7);
-
-  if (q < 3) {
-    // fail
-    lapses += 1;
-    reps = 0;
-    interval = 1;
-  } else {
-    reps += 1;
-    if (reps === 1) interval = 2;
-    else if (reps === 2) interval = 4;
-    else interval = Math.round(Math.max(1, interval * ease * 1.1));
-  }
-
-  return {
-    ease,
-    reps,
-    intervalDays: interval,
-    dueAt: daysFromNow(interval),
-    lapses
-  };
+// ---------- UI show/hide ----------
+function setLoggedInUI(isIn) {
+  $("loginCard").style.display = isIn ? "none" : "block";       // hide login after login ✅
+  $("userbar").style.display = isIn ? "flex" : "none";
+  $("addCard").style.display = isIn ? "block" : "none";
+  $("studyCard").style.display = isIn ? "block" : "none";
+  $("listCard").style.display = isIn ? "block" : "none";
 }
 
-// --- Translation (FREE) ---
-// We’ll do: detect language (LibreTranslate public instance) -> translate to English (MyMemory as fallback)
-// Note: public free services can rate-limit sometimes; for personal use usually ok.
+function cardsCol(){ return collection(db, `users/${user.uid}/cards`); }
 
-async function detectLang(text) {
-  // LibreTranslate public instance (can change; if it fails, we return "auto")
-  try {
+// ---------- Translation (FREE) ----------
+/**
+ * We do this:
+ * 1) If user selected language != auto => use that
+ * 2) Else try detect via LibreTranslate
+ * 3) If detect fails => DEFAULT TO 'de' (German) so MyMemory NEVER breaks.
+ */
+
+async function detectLangLibre(text){
+  try{
     const r = await fetch("https://libretranslate.de/detect", {
-      method: "POST",
-      headers: { "Content-Type":"application/json" },
-      body: JSON.stringify({ q: text })
+      method:"POST",
+      headers:{ "Content-Type":"application/json" },
+      body: JSON.stringify({ q:text })
     });
     const data = await r.json();
-    if (Array.isArray(data) && data[0]?.language) return data[0].language; // e.g. "de"
-  } catch {}
-  return "auto";
+    const lang = Array.isArray(data) && data[0]?.language ? data[0].language : null;
+    if (lang && /^[a-z]{2}$/i.test(lang)) return lang.toLowerCase();
+  }catch{}
+  return null;
 }
 
-async function translateToEnglish(text, sourceLang) {
-  // MyMemory needs langpair; if sourceLang unknown, try "auto" by guessing with detectLang
-  const from = sourceLang && sourceLang !== "auto" ? sourceLang : await detectLang(text);
+function germanHeuristic(text){
+  // quick fallback if detect fails: if it contains German chars or common words
+  const t = text.toLowerCase();
+  if (/[äöüß]/.test(t)) return true;
+  if (/\b(der|die|das|und|nicht|ich|du|ein|eine|ist|war|bin|zu|mit|für)\b/.test(t)) return true;
+  return false;
+}
+
+async function translateToEnglish(text, sourceChoice){
+  let from = sourceChoice;
+  if (from === "auto") {
+    from = await detectLangLibre(text);
+    if (!from) from = germanHeuristic(text) ? "de" : "en";  // ✅ never "auto"
+  }
+
   const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${encodeURIComponent(from)}|en`;
   const r = await fetch(url);
   const data = await r.json();
   const en = data?.responseData?.translatedText || "";
+
+  // if MyMemory returns an error message as "translation", guard it
+  if (/invalid source language/i.test(en)) {
+    // hard fallback to German
+    const url2 = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=de|en`;
+    const r2 = await fetch(url2);
+    const d2 = await r2.json();
+    return { from:"de", en: d2?.responseData?.translatedText || "" };
+  }
+
   return { from, en };
 }
 
-async function fetchExamples(text, fromLang) {
-  // Try Tatoeba API v0 (may not always return results)
-  // We'll keep it best-effort; if it fails, return empty.
-  try {
-    // Tatoeba uses ISO 639-3 codes; many languages differ. We'll map common ones.
+async function fetchExamples(text, fromLang){
+  // Best-effort only; examples may be empty.
+  try{
     const map = { de:"deu", en:"eng", fr:"fra", es:"spa", it:"ita", hi:"hin" };
     const from = map[fromLang] || "deu";
     const url = `https://tatoeba.org/en/api_v0/search?from=${from}&to=eng&query=${encodeURIComponent(text)}&sort=relevance`;
     const r = await fetch(url);
     const data = await r.json();
     const results = data?.results || [];
-    const examples = results.slice(0,4).map(x => ({
+    return results.slice(0,4).map(x => ({
       src: x.text,
       en: x.translations?.[0]?.[0]?.text || ""
     })).filter(x => x.src && x.en);
-    return examples;
-  } catch {
+  }catch{
     return [];
   }
 }
 
-// --- Firestore paths ---
-function cardsCol() {
-  return collection(db, `users/${user.uid}/cards`);
-}
-
-// --- Load all cards (simple: personal use, no indexing headaches) ---
-async function loadCards() {
-  if (!user) return;
-  const snap = await getDocs(cardsCol());
-  cards = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-
-  // ensure dueAt exists
+// ---------- CRUD ----------
+async function loadCards(){
+  if(!user) return;
+  // order by createdAt for stable list
+  const qy = query(cardsCol(), orderBy("createdAt", "desc"));
+  const snap = await getDocs(qy);
+  cards = snap.docs.map(d => ({ id:d.id, ...d.data() }));
+  // normalize dueAt
   const now = today0();
-  for (const c of cards) {
-    if (!c.dueAt) c.dueAt = now;
-  }
+  for (const c of cards) if (!c.dueAt) c.dueAt = now;
 }
 
-// --- Pick next due card ---
-function dueCards() {
+function dueCards(){
   const now = today0();
   return cards.filter(c => (c.dueAt ?? now) <= now);
 }
-function pickNext() {
+
+function pickNext(){
   const due = dueCards().sort((a,b)=> (a.dueAt||0)-(b.dueAt||0));
   return due[0] || null;
 }
 
-// --- Render study card ---
-function renderStats() {
-  const due = dueCards().length;
-  $("stats").textContent = `Due: ${due} • Total: ${cards.length}`;
+function renderStats(){
+  $("stats").textContent = `Due: ${dueCards().length} • Total: ${cards.length}`;
 }
 
-function showCard(card) {
+function renderList(){
+  const q = ($("search").value || "").toLowerCase().trim();
+  const el = $("list");
+  el.innerHTML = "";
+
+  const filtered = cards.filter(c => {
+    if(!q) return true;
+    return `${c.phrase||""} ${c.en||""}`.toLowerCase().includes(q);
+  });
+
+  if(filtered.length === 0){
+    el.innerHTML = `<div class="muted">No cards.</div>`;
+    return;
+  }
+
+  for(const c of filtered){
+    const div = document.createElement("div");
+    div.className = "item";
+    div.innerHTML = `
+      <div class="itemTop">
+        <div>
+          <div class="itemTitle">${escapeHtml(c.phrase || "")}</div>
+          <div class="itemMeta">${escapeHtml(c.en || "")}</div>
+        </div>
+        <button class="btn danger" data-del="${c.id}">Delete</button>
+      </div>
+    `;
+    el.appendChild(div);
+  }
+}
+
+function showCard(card){
   current = card;
   revealed = false;
   $("backArea").style.display = "none";
-  $("btnReveal").disabled = !card;
 
-  if (!card) {
-    $("frontText").textContent = "No cards due right now ✅";
-    $("frontMeta").textContent = "Add more phrases or come back tomorrow.";
+  if(!card){
+    $("chipState").textContent = "DONE";
+    $("frontText").textContent = "No cards due ✅";
+    $("frontMeta").textContent = "Add more words above or come back later.";
     $("backText").textContent = "—";
     $("backExamples").textContent = "";
     return;
   }
 
+  $("chipState").textContent = "DUE";
   $("frontText").textContent = card.phrase || "—";
   $("frontMeta").textContent = `Detected: ${card.lang || "?"} • Due: ${new Date(card.dueAt).toLocaleDateString()}`;
   $("backText").textContent = card.en || "—";
@@ -190,18 +207,19 @@ function showCard(card) {
     : "Examples: (none found)";
 }
 
-async function refreshStudy() {
+async function refreshAll(){
   await loadCards();
   renderStats();
+  renderList();
   showCard(pickNext());
 }
 
-// --- Login handlers ---
+// ---------- Auth ----------
 $("btnLogin").onclick = async () => {
   $("loginStatus").textContent = "";
-  try {
+  try{
     await signInWithEmailAndPassword(auth, $("email").value.trim(), $("password").value);
-  } catch (e) {
+  }catch(e){
     $("loginStatus").textContent = "Login failed: " + (e?.message || e);
   }
 };
@@ -210,37 +228,38 @@ $("btnLogout").onclick = async () => {
   await signOut(auth);
 };
 
-// auth state
 onAuthStateChanged(auth, async (u) => {
   user = u;
-  if (!user) {
-    addCard.style.display = "none";
-    studyCard.style.display = "none";
-    $("btnLogout").style.display = "none";
+  if(!user){
+    setLoggedInUI(false);
     $("loginStatus").textContent = "Logged out.";
     return;
   }
-
-  $("loginStatus").textContent = `Logged in as ${user.email}`;
-  $("btnLogout").style.display = "inline-block";
-  addCard.style.display = "block";
-  studyCard.style.display = "block";
-  await refreshStudy();
+  setLoggedInUI(true);
+  $("userEmail").textContent = user.email || "Logged in";
+  await refreshAll();
 });
 
-// --- Add phrase -> translate -> examples -> save ---
+// ---------- Add / Translate ----------
+$("btnClear").onclick = () => {
+  $("phrase").value = "";
+  $("preview").style.display = "none";
+  $("addStatus").textContent = "";
+};
+
 $("btnTranslate").onclick = async () => {
   const text = $("phrase").value.trim();
-  if (!text) return;
+  if(!text) return;
 
   $("addStatus").textContent = "Translating…";
   $("preview").style.display = "none";
 
-  try {
-    const { from, en } = await translateToEnglish(text, "auto");
+  try{
+    const sourceChoice = $("sourceLang").value;
+    const { from, en } = await translateToEnglish(text, sourceChoice);
     const examples = await fetchExamples(text, from);
 
-    // show preview
+    // preview
     $("preview").style.display = "block";
     $("pLang").textContent = from;
     $("pEn").textContent = en;
@@ -248,91 +267,111 @@ $("btnTranslate").onclick = async () => {
       ? examples.map(x => `<li>${escapeHtml(x.src)} → ${escapeHtml(x.en)}</li>`).join("")
       : "<li>(No examples found)</li>";
 
-    // save to Firestore (with initial SRS)
-    const docData = {
+    // save
+    await addDoc(cardsCol(), {
       phrase: text,
       lang: from,
       en,
       examples,
       createdAt: serverTimestamp(),
-      // SRS fields
-      dueAt: today0(),
-      intervalDays: 0,
-      ease: 2.5,
-      reps: 0,
-      lapses: 0
-    };
-
-    await addDoc(cardsCol(), docData);
+      updatedAt: serverTimestamp(),
+      dueAt: today0(),        // due now
+      // progress fields
+      lastGrade: null
+    });
 
     $("addStatus").textContent = "Saved ✅";
     $("phrase").value = "";
-    await refreshStudy();
-  } catch (e) {
+    await refreshAll();
+  }catch(e){
     $("addStatus").textContent = "Error: " + (e?.message || e);
   }
 };
 
-function escapeHtml(str){
-  return String(str).replace(/[&<>"']/g, s => ({
-    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
-  }[s]));
-}
-
-// --- Reveal + grade buttons ---
+// ---------- Study controls ----------
 $("btnReveal").onclick = () => {
-  if (!current) return;
+  if(!current) return;
   revealed = true;
   $("backArea").style.display = "block";
 };
 
-async function gradeCurrent(grade) {
-  if (!current) return;
-  const nextSrs = applySRS(current, grade);
+async function gradeCurrent(days, label){
+  if(!current) return;
 
+  const dueAt = daysFromNow(days);
   const ref = doc(db, `users/${user.uid}/cards/${current.id}`);
-  await updateDoc(ref, { ...nextSrs, updatedAt: serverTimestamp() });
+  await updateDoc(ref, {
+    dueAt,
+    lastGrade: label,
+    updatedAt: serverTimestamp()
+  });
 
-  await refreshStudy();
+  await refreshAll();
 }
 
-$("btnAgain").onclick = () => gradeCurrent(0);
-$("btnEasy").onclick = () => gradeCurrent(5);
+$("btnAgain").onclick = () => gradeCurrent(0, "again");   // today
+$("btnHard").onclick  = () => gradeCurrent(1, "hard");    // 1 day
+$("btnGood").onclick  = () => gradeCurrent(7, "good");    // 1 week
+$("btnEasy").onclick  = () => gradeCurrent(30,"easy");    // 1 month
 
-// --- Tinder swipe (left/right) ---
+$("btnDelete").onclick = async () => {
+  if(!current) return;
+  if(!confirm("Delete this card permanently?")) return;
+  const ref = doc(db, `users/${user.uid}/cards/${current.id}`);
+  await deleteDoc(ref);
+  await refreshAll();
+};
+
+// list delete
+$("list").addEventListener("click", async (e) => {
+  const id = e.target?.dataset?.del;
+  if(!id) return;
+  if(!confirm("Delete this card permanently?")) return;
+  await deleteDoc(doc(db, `users/${user.uid}/cards/${id}`));
+  await refreshAll();
+});
+
+$("search").addEventListener("input", renderList);
+
+// ---------- Tinder swipe (only after reveal) ----------
 const swipeEl = $("swipeCard");
 let startX = 0, curX = 0, dragging = false;
 
 swipeEl.addEventListener("pointerdown", (e) => {
-  if (!current || !revealed) return; // require reveal first
+  if(!current || !revealed) return;
   dragging = true;
   startX = e.clientX;
   swipeEl.setPointerCapture(e.pointerId);
 });
 
 swipeEl.addEventListener("pointermove", (e) => {
-  if (!dragging) return;
+  if(!dragging) return;
   curX = e.clientX - startX;
   swipeEl.style.transform = `translateX(${curX}px) rotate(${curX/18}deg)`;
 });
 
 swipeEl.addEventListener("pointerup", async () => {
-  if (!dragging) return;
+  if(!dragging) return;
   dragging = false;
-
   const x = curX;
   curX = 0;
 
-  // threshold
   if (x < -120) {
     swipeEl.style.transform = "translateX(-420px) rotate(-12deg)";
     setTimeout(()=> swipeEl.style.transform = "", 120);
-    await gradeCurrent(0); // Again
+    await gradeCurrent(0, "again"); // left = again
   } else if (x > 120) {
     swipeEl.style.transform = "translateX(420px) rotate(12deg)";
     setTimeout(()=> swipeEl.style.transform = "", 120);
-    await gradeCurrent(5); // Easy
+    await gradeCurrent(30, "easy"); // right = easy
   } else {
     swipeEl.style.transform = "";
   }
 });
+
+// ---------- helpers ----------
+function escapeHtml(str){
+  return String(str).replace(/[&<>"']/g, s => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+  }[s]));
+}
