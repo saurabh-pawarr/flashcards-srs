@@ -1,167 +1,82 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Flashcards SRS</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="wrap">
-    <div class="brand">
-      <div class="logo">SRS</div>
-      <div>
-        <h1>German Flashcards</h1>
-        <p class="muted">Free • Offline • Spaced repetition</p>
+  <header>
+    <h1>Flashcards SRS</h1>
+    <div class="muted">Private • Sync • Swipe study</div>
+  </header>
+
+  <!-- LOGIN -->
+  <section class="card" id="loginCard">
+    <h2>Login</h2>
+    <div class="row">
+      <input id="email" type="email" placeholder="Email" autocomplete="email">
+      <input id="password" type="password" placeholder="Password" autocomplete="current-password">
+      <button id="btnLogin">Login</button>
+      <button class="ghost" id="btnLogout" style="display:none;">Logout</button>
+    </div>
+    <div class="muted small" id="loginStatus"></div>
+  </section>
+
+  <!-- ADD -->
+  <section class="card" id="addCard" style="display:none;">
+    <h2>Add a word / phrase</h2>
+    <div class="row">
+      <input id="phrase" type="text" placeholder="Type any language word or sentence…">
+      <button id="btnTranslate">Translate + Save</button>
+    </div>
+    <div class="muted small" id="addStatus"></div>
+
+    <div class="preview" id="preview" style="display:none;">
+      <div><span class="muted">Detected:</span> <b id="pLang">—</b></div>
+      <div><span class="muted">English:</span> <b id="pEn">—</b></div>
+      <div class="muted">Examples:</div>
+      <ul id="pExamples"></ul>
+    </div>
+  </section>
+
+  <!-- STUDY -->
+  <section class="card" id="studyCard" style="display:none;">
+    <div class="studyTop">
+      <h2>Study</h2>
+      <div class="muted small" id="stats">—</div>
+    </div>
+
+    <div class="swipeWrap">
+      <div id="swipeCard" class="swipeCard">
+        <div class="label muted small">Front</div>
+        <div class="front" id="frontText">—</div>
+        <div class="muted small" id="frontMeta"></div>
+
+        <div class="divider"></div>
+
+        <div id="backArea" style="display:none;">
+          <div class="label muted small">Back (English)</div>
+          <div class="back" id="backText">—</div>
+          <div class="muted small" id="backExamples"></div>
+        </div>
+
+        <div class="hint muted small" id="swipeHint">Tap “Reveal”, then swipe ⟵ Again / ⟶ Easy</div>
       </div>
     </div>
 
-    <nav class="tabs" role="tablist" aria-label="Sections">
-      <button class="tab active" data-tab="study" role="tab" aria-selected="true">Study</button>
-      <button class="tab" data-tab="add" role="tab" aria-selected="false">Add Words</button>
-      <button class="tab" data-tab="deck" role="tab" aria-selected="false">My Deck</button>
-      <button class="tab" data-tab="backup" role="tab" aria-selected="false">Backup</button>
-    </nav>
-  </header>
+    <div class="row">
+      <button id="btnReveal">Reveal</button>
+      <button class="ghost" id="btnAgain">Again (Left)</button>
+      <button class="ghost" id="btnEasy">Easy (Right)</button>
+    </div>
+  </section>
 
-  <main class="wrap">
-    <!-- STUDY -->
-    <section id="tab-study" class="panel active">
-      <div class="row">
-        <div class="card stat">
-          <div class="stat-num" id="stat-due">0</div>
-          <div class="muted">Due now</div>
-        </div>
-        <div class="card stat">
-          <div class="stat-num" id="stat-total">0</div>
-          <div class="muted">Total cards</div>
-        </div>
-        <div class="card stat">
-          <div class="stat-num" id="stat-new">0</div>
-          <div class="muted">New cards</div>
-        </div>
-      </div>
-
-      <div class="card study">
-        <div class="study-top">
-          <div class="muted" id="study-meta">No cards yet. Add some words.</div>
-          <button class="ghost" id="btn-skip">Skip</button>
-        </div>
-
-        <div class="study-face">
-          <div class="face-label">Front</div>
-          <div class="face-text" id="front-text">—</div>
-          <div class="face-sub muted" id="front-sub"></div>
-        </div>
-
-        <div class="study-divider"></div>
-
-        <div class="study-face hidden" id="back-area">
-          <div class="face-label">Back</div>
-          <div class="face-text" id="back-text">—</div>
-          <div class="face-sub muted" id="back-sub"></div>
-        </div>
-
-        <div class="study-actions">
-          <button class="primary" id="btn-reveal">Reveal</button>
-
-          <div class="rate hidden" id="rate-area">
-            <button class="rate-btn bad" data-grade="0">Again</button>
-            <button class="rate-btn warn" data-grade="1">Hard</button>
-            <button class="rate-btn ok" data-grade="3">Good</button>
-            <button class="rate-btn good" data-grade="5">Easy</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="card note">
-        <div class="muted">
-          Tip: this app runs fully in your browser. Use Backup → Export so you never lose your deck.
-        </div>
-      </div>
-    </section>
-
-    <!-- ADD -->
-    <section id="tab-add" class="panel">
-      <div class="card">
-        <h2>Add a word</h2>
-        <form id="add-form" class="form">
-          <label>
-            German (front)
-            <input type="text" id="in-front" placeholder="z.B. der Bahnhof" required />
-          </label>
-
-          <label>
-            English meaning (back)
-            <input type="text" id="in-back" placeholder="e.g. train station" required />
-          </label>
-
-          <label>
-            Example (optional)
-            <input type="text" id="in-example" placeholder="Ich bin am Bahnhof." />
-          </label>
-
-          <label>
-            Tags (optional, comma-separated)
-            <input type="text" id="in-tags" placeholder="A1, travel, noun" />
-          </label>
-
-          <div class="form-actions">
-            <button class="primary" type="submit">Add card</button>
-            <button class="ghost" type="button" id="btn-add-sample">Add sample set</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- DECK -->
-    <section id="tab-deck" class="panel">
-      <div class="card">
-        <div class="deck-head">
-          <h2>My deck</h2>
-          <div class="deck-tools">
-            <input id="search" type="text" placeholder="Search…" />
-            <select id="filter">
-              <option value="all">All</option>
-              <option value="due">Due</option>
-              <option value="new">New</option>
-              <option value="learning">Learning</option>
-              <option value="mature">Mature</option>
-            </select>
-          </div>
-        </div>
-
-        <div id="deck-list" class="deck-list"></div>
-      </div>
-    </section>
-
-    <!-- BACKUP -->
-    <section id="tab-backup" class="panel">
-      <div class="card">
-        <h2>Backup</h2>
-        <p class="muted">Export your deck as JSON and import it later on any device.</p>
-
-        <div class="backup-actions">
-          <button class="primary" id="btn-export">Export JSON</button>
-          <label class="file">
-            <input type="file" id="in-import" accept="application/json" />
-            Import JSON
-          </label>
-          <button class="danger" id="btn-reset">Reset everything</button>
-        </div>
-
-        <div class="card subtle">
-          <h3>Optional: CSV idea</h3>
-          <p class="muted">If you want, I can add CSV import/export too (Front,Back,Example,Tags).</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="wrap muted small">
-    Built for you • Runs offline • No ads • No tracking
+  <footer class="muted small">
+    Tip: Works best when you “Install to Home Screen” on mobile (PWA style).
   </footer>
 
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
