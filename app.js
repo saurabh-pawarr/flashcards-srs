@@ -1,441 +1,338 @@
-// Flashcards SRS (SM-2 inspired) - all local, no backend
-const STORAGE_KEY = "srs_flashcards_v1";
+// --- Firebase (CDN modules) ---
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {
+  getAuth,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signOut
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  addDoc,
+  doc,
+  updateDoc,
+  serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-const $ = (sel) => document.querySelector(sel);
+// Your config (public; protected by Auth + Firestore Rules)
+const firebaseConfig = {
+  apiKey: "AIzaSyD5jk9FcywvGBNRLGlSHeLFnbTXcOBYDCc",
+  authDomain: "flashcards-srs.firebaseapp.com",
+  projectId: "flashcards-srs",
+  storageBucket: "flashcards-srs.firebasestorage.app",
+  messagingSenderId: "335428443475",
+  appId: "1:335428443475:web:fdbbdfbf5e9e6bb45cd5a6"
+};
 
-function todayISO() {
-  const d = new Date();
-  d.setHours(0,0,0,0);
-  return d.toISOString();
-}
-function nowISO() {
-  return new Date().toISOString();
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+// --- UI helpers ---
+const $ = (id) => document.getElementById(id);
+const loginCard = $("loginCard");
+const addCard = $("addCard");
+const studyCard = $("studyCard");
+
+let user = null;
+let cards = [];      // loaded from Firestore
+let current = null;  // current card object
+let revealed = false;
+
+// --- SRS helpers (simple + effective) ---
+function today0() {
+  const d = new Date(); d.setHours(0,0,0,0); return d.getTime();
 }
 function daysFromNow(days) {
-  const d = new Date();
-  d.setHours(0,0,0,0);
-  d.setDate(d.getDate() + days);
-  return d.toISOString();
+  const d = new Date(); d.setHours(0,0,0,0); d.setDate(d.getDate()+days); return d.getTime();
 }
-function clamp(n, a, b) {
-  return Math.max(a, Math.min(b, n));
-}
-function uid() {
-  return Math.random().toString(16).slice(2) + Date.now().toString(16);
-}
+function clamp(n,a,b){ return Math.max(a, Math.min(b,n)); }
 
-/**
- * Card model:
- * {
- *  id, front, back, example, tags:[],
- *  createdAt, updatedAt,
- *  dueAt, intervalDays, ease, reps, lapses,
- *  state: "new"|"learning"|"review"
- * }
- */
+// grade: 0 Again, 5 Easy
+function applySRS(card, grade) {
+  let ease = card.ease ?? 2.5;
+  let reps = card.reps ?? 0;
+  let interval = card.intervalDays ?? 0;
+  let lapses = card.lapses ?? 0;
 
-// ------- Data -------
-function loadState() {
-  const raw = localStorage.getItem(STORAGE_KEY);
-  if (!raw) return { cards: [] };
-  try { return JSON.parse(raw); }
-  catch { return { cards: [] }; }
-}
-function saveState(state) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-}
-let state = loadState();
+  // SM-2-ish ease update
+  const q = clamp(grade, 0, 5);
+  ease = ease + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
+  ease = clamp(ease, 1.3, 2.7);
 
-// ------- Tabs -------
-document.querySelectorAll(".tab").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-    const tab = btn.dataset.tab;
-    document.querySelectorAll(".panel").forEach(p => p.classList.remove("active"));
-    $(`#tab-${tab}`).classList.add("active");
-    renderAll();
-  });
-});
+  if (q < 3) {
+    // fail
+    lapses += 1;
+    reps = 0;
+    interval = 1;
+  } else {
+    reps += 1;
+    if (reps === 1) interval = 2;
+    else if (reps === 2) interval = 4;
+    else interval = Math.round(Math.max(1, interval * ease * 1.1));
+  }
 
-// ------- Add form -------
-$("#add-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const front = $("#in-front").value.trim();
-  const back = $("#in-back").value.trim();
-  const example = $("#in-example").value.trim();
-  const tags = $("#in-tags").value.split(",").map(t => t.trim()).filter(Boolean);
-
-  if (!front || !back) return;
-
-  const card = {
-    id: uid(),
-    front, back,
-    example: example || "",
-    tags,
-    createdAt: nowISO(),
-    updatedAt: nowISO(),
-    // SRS fields
-    dueAt: todayISO(),      // due immediately
-    intervalDays: 0,
-    ease: 2.5,
-    reps: 0,
-    lapses: 0,
-    state: "new"
+  return {
+    ease,
+    reps,
+    intervalDays: interval,
+    dueAt: daysFromNow(interval),
+    lapses
   };
+}
 
-  state.cards.unshift(card);
-  saveState(state);
+// --- Translation (FREE) ---
+// We’ll do: detect language (LibreTranslate public instance) -> translate to English (MyMemory as fallback)
+// Note: public free services can rate-limit sometimes; for personal use usually ok.
 
-  $("#add-form").reset();
-  // Switch to Study tab
-  document.querySelector('[data-tab="study"]').click();
+async function detectLang(text) {
+  // LibreTranslate public instance (can change; if it fails, we return "auto")
+  try {
+    const r = await fetch("https://libretranslate.de/detect", {
+      method: "POST",
+      headers: { "Content-Type":"application/json" },
+      body: JSON.stringify({ q: text })
+    });
+    const data = await r.json();
+    if (Array.isArray(data) && data[0]?.language) return data[0].language; // e.g. "de"
+  } catch {}
+  return "auto";
+}
+
+async function translateToEnglish(text, sourceLang) {
+  // MyMemory needs langpair; if sourceLang unknown, try "auto" by guessing with detectLang
+  const from = sourceLang && sourceLang !== "auto" ? sourceLang : await detectLang(text);
+  const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${encodeURIComponent(from)}|en`;
+  const r = await fetch(url);
+  const data = await r.json();
+  const en = data?.responseData?.translatedText || "";
+  return { from, en };
+}
+
+async function fetchExamples(text, fromLang) {
+  // Try Tatoeba API v0 (may not always return results)
+  // We'll keep it best-effort; if it fails, return empty.
+  try {
+    // Tatoeba uses ISO 639-3 codes; many languages differ. We'll map common ones.
+    const map = { de:"deu", en:"eng", fr:"fra", es:"spa", it:"ita", hi:"hin" };
+    const from = map[fromLang] || "deu";
+    const url = `https://tatoeba.org/en/api_v0/search?from=${from}&to=eng&query=${encodeURIComponent(text)}&sort=relevance`;
+    const r = await fetch(url);
+    const data = await r.json();
+    const results = data?.results || [];
+    const examples = results.slice(0,4).map(x => ({
+      src: x.text,
+      en: x.translations?.[0]?.[0]?.text || ""
+    })).filter(x => x.src && x.en);
+    return examples;
+  } catch {
+    return [];
+  }
+}
+
+// --- Firestore paths ---
+function cardsCol() {
+  return collection(db, `users/${user.uid}/cards`);
+}
+
+// --- Load all cards (simple: personal use, no indexing headaches) ---
+async function loadCards() {
+  if (!user) return;
+  const snap = await getDocs(cardsCol());
+  cards = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+
+  // ensure dueAt exists
+  const now = today0();
+  for (const c of cards) {
+    if (!c.dueAt) c.dueAt = now;
+  }
+}
+
+// --- Pick next due card ---
+function dueCards() {
+  const now = today0();
+  return cards.filter(c => (c.dueAt ?? now) <= now);
+}
+function pickNext() {
+  const due = dueCards().sort((a,b)=> (a.dueAt||0)-(b.dueAt||0));
+  return due[0] || null;
+}
+
+// --- Render study card ---
+function renderStats() {
+  const due = dueCards().length;
+  $("stats").textContent = `Due: ${due} • Total: ${cards.length}`;
+}
+
+function showCard(card) {
+  current = card;
+  revealed = false;
+  $("backArea").style.display = "none";
+  $("btnReveal").disabled = !card;
+
+  if (!card) {
+    $("frontText").textContent = "No cards due right now ✅";
+    $("frontMeta").textContent = "Add more phrases or come back tomorrow.";
+    $("backText").textContent = "—";
+    $("backExamples").textContent = "";
+    return;
+  }
+
+  $("frontText").textContent = card.phrase || "—";
+  $("frontMeta").textContent = `Detected: ${card.lang || "?"} • Due: ${new Date(card.dueAt).toLocaleDateString()}`;
+  $("backText").textContent = card.en || "—";
+
+  const ex = Array.isArray(card.examples) ? card.examples : [];
+  $("backExamples").textContent = ex.length
+    ? "Examples: " + ex.map(e => `${e.src} → ${e.en}`).join(" | ")
+    : "Examples: (none found)";
+}
+
+async function refreshStudy() {
+  await loadCards();
+  renderStats();
+  showCard(pickNext());
+}
+
+// --- Login handlers ---
+$("btnLogin").onclick = async () => {
+  $("loginStatus").textContent = "";
+  try {
+    await signInWithEmailAndPassword(auth, $("email").value.trim(), $("password").value);
+  } catch (e) {
+    $("loginStatus").textContent = "Login failed: " + (e?.message || e);
+  }
+};
+
+$("btnLogout").onclick = async () => {
+  await signOut(auth);
+};
+
+// auth state
+onAuthStateChanged(auth, async (u) => {
+  user = u;
+  if (!user) {
+    addCard.style.display = "none";
+    studyCard.style.display = "none";
+    $("btnLogout").style.display = "none";
+    $("loginStatus").textContent = "Logged out.";
+    return;
+  }
+
+  $("loginStatus").textContent = `Logged in as ${user.email}`;
+  $("btnLogout").style.display = "inline-block";
+  addCard.style.display = "block";
+  studyCard.style.display = "block";
+  await refreshStudy();
 });
 
-// sample set
-$("#btn-add-sample").addEventListener("click", () => {
-  const samples = [
-    ["der Bahnhof","train station","Ich bin am Bahnhof.","A1,travel,noun"],
-    ["laufen","to run / walk","Ich laufe nach Hause.","A1,verb"],
-    ["eigentlich","actually / really","Eigentlich habe ich keine Zeit.","A2,adverb"],
-    ["während","during / while","Während des Films war es ruhig.","B1,prep"]
-  ];
-  samples.forEach(([front,back,example,tags]) => {
-    const card = {
-      id: uid(),
-      front, back,
-      example: example || "",
-      tags: tags.split(",").map(t=>t.trim()).filter(Boolean),
-      createdAt: nowISO(),
-      updatedAt: nowISO(),
-      dueAt: todayISO(),
+// --- Add phrase -> translate -> examples -> save ---
+$("btnTranslate").onclick = async () => {
+  const text = $("phrase").value.trim();
+  if (!text) return;
+
+  $("addStatus").textContent = "Translating…";
+  $("preview").style.display = "none";
+
+  try {
+    const { from, en } = await translateToEnglish(text, "auto");
+    const examples = await fetchExamples(text, from);
+
+    // show preview
+    $("preview").style.display = "block";
+    $("pLang").textContent = from;
+    $("pEn").textContent = en;
+    $("pExamples").innerHTML = examples.length
+      ? examples.map(x => `<li>${escapeHtml(x.src)} → ${escapeHtml(x.en)}</li>`).join("")
+      : "<li>(No examples found)</li>";
+
+    // save to Firestore (with initial SRS)
+    const docData = {
+      phrase: text,
+      lang: from,
+      en,
+      examples,
+      createdAt: serverTimestamp(),
+      // SRS fields
+      dueAt: today0(),
       intervalDays: 0,
       ease: 2.5,
       reps: 0,
-      lapses: 0,
-      state: "new"
+      lapses: 0
     };
-    state.cards.unshift(card);
-  });
-  saveState(state);
-  document.querySelector('[data-tab="study"]').click();
-});
 
-// ------- Study logic -------
-let currentId = null;
-let reveal = false;
+    await addDoc(cardsCol(), docData);
 
-function isDue(card) {
-  return new Date(card.dueAt).getTime() <= new Date(todayISO()).getTime();
-}
-
-function pickNextCard() {
-  // due cards first; otherwise show a new card
-  const due = state.cards.filter(isDue);
-  if (due.length === 0) return null;
-
-  // prioritize learning/new before review
-  const rank = (c) => {
-    const s = c.state === "new" ? 0 : (c.state === "learning" ? 1 : 2);
-    return s;
-  };
-  due.sort((a,b) => rank(a) - rank(b) || new Date(a.dueAt) - new Date(b.dueAt));
-  return due[0];
-}
-
-/**
- * Grade mapping:
- * 0 Again (fail)
- * 1 Hard (struggle)
- * 3 Good (ok)
- * 5 Easy (strong)
- *
- * SM-2-ish:
- * - If grade < 3: reps=0, interval=1 day, ease decreases
- * - If grade >=3: reps++, interval grows, ease updates
- */
-function applyGrade(card, grade) {
-  const g = grade;
-
-  // Update ease (SM-2 formula)
-  // EF' = EF + (0.1 - (5-q)*(0.08 + (5-q)*0.02))
-  // with q in [0..5]
-  const q = clamp(g, 0, 5);
-  let ef = card.ease ?? 2.5;
-  ef = ef + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
-  ef = clamp(ef, 1.3, 2.7);
-
-  let reps = card.reps ?? 0;
-  let interval = card.intervalDays ?? 0;
-
-  if (q < 3) {
-    // failed recall
-    card.lapses = (card.lapses ?? 0) + 1;
-    reps = 0;
-    interval = 1;               // tomorrow
-    card.state = "learning";
-  } else {
-    // success
-    reps += 1;
-    if (card.state === "new") card.state = "learning";
-    if (reps === 1) interval = (q === 3 ? 1 : 2);
-    else if (reps === 2) interval = (q === 3 ? 3 : 4);
-    else {
-      // grow by ease; hard slows down
-      const hardFactor = (q === 3) ? 0.9 : 1.15;
-      interval = Math.round(Math.max(1, interval * ef * hardFactor));
-    }
-
-    // Once interval is big enough, treat as review/mature
-    if (interval >= 7) card.state = "review";
+    $("addStatus").textContent = "Saved ✅";
+    $("phrase").value = "";
+    await refreshStudy();
+  } catch (e) {
+    $("addStatus").textContent = "Error: " + (e?.message || e);
   }
+};
 
-  card.ease = ef;
-  card.reps = reps;
-  card.intervalDays = interval;
-  card.dueAt = daysFromNow(interval);
-  card.updatedAt = nowISO();
-}
-
-function resetStudyUI() {
-  reveal = false;
-  $("#back-area").classList.add("hidden");
-  $("#rate-area").classList.add("hidden");
-  $("#btn-reveal").classList.remove("hidden");
-}
-
-$("#btn-reveal").addEventListener("click", () => {
-  reveal = true;
-  $("#back-area").classList.remove("hidden");
-  $("#rate-area").classList.remove("hidden");
-  $("#btn-reveal").classList.add("hidden");
-});
-
-$("#btn-skip").addEventListener("click", () => {
-  if (!currentId) return;
-  // push card to tomorrow lightly so it doesn't block you
-  const card = state.cards.find(c => c.id === currentId);
-  if (card) {
-    card.dueAt = daysFromNow(1);
-    card.updatedAt = nowISO();
-    saveState(state);
-  }
-  showNext();
-});
-
-$("#rate-area").addEventListener("click", (e) => {
-  const btn = e.target.closest("button[data-grade]");
-  if (!btn) return;
-  const grade = Number(btn.dataset.grade);
-  const card = state.cards.find(c => c.id === currentId);
-  if (!card) return;
-
-  applyGrade(card, grade);
-  saveState(state);
-  showNext();
-});
-
-function showNext() {
-  resetStudyUI();
-  const next = pickNextCard();
-  if (!next) {
-    currentId = null;
-    $("#study-meta").textContent = "No cards due now. Add more words or come back later.";
-    $("#front-text").textContent = "—";
-    $("#front-sub").textContent = "";
-    $("#back-text").textContent = "—";
-    $("#back-sub").textContent = "";
-    renderStats();
-    return;
-  }
-
-  currentId = next.id;
-  $("#study-meta").textContent =
-    `State: ${next.state} • Interval: ${next.intervalDays} day(s) • Ease: ${next.ease.toFixed(2)} • Due: ${new Date(next.dueAt).toLocaleDateString()}`;
-
-  $("#front-text").textContent = next.front;
-  $("#front-sub").textContent = next.tags?.length ? `Tags: ${next.tags.join(", ")}` : "";
-
-  $("#back-text").textContent = next.back;
-  $("#back-sub").textContent = next.example ? `Example: ${next.example}` : "";
-  renderStats();
-}
-
-// ------- Deck list -------
-function stateLabel(card) {
-  if (card.state === "new") return "New";
-  if (card.state === "learning") return "Learning";
-  return card.intervalDays >= 21 ? "Mature" : "Review";
-}
-function matchesFilter(card, filter) {
-  if (filter === "all") return true;
-  if (filter === "due") return isDue(card);
-  if (filter === "new") return card.state === "new";
-  if (filter === "learning") return card.state === "learning";
-  if (filter === "mature") return (card.state === "review" && card.intervalDays >= 21);
-  return true;
-}
-function renderDeck() {
-  const q = ($("#search").value || "").toLowerCase().trim();
-  const filter = $("#filter").value;
-
-  const list = $("#deck-list");
-  list.innerHTML = "";
-
-  const cards = state.cards
-    .filter(c => matchesFilter(c, filter))
-    .filter(c => {
-      if (!q) return true;
-      const hay = `${c.front} ${c.back} ${c.example || ""} ${(c.tags||[]).join(" ")}`.toLowerCase();
-      return hay.includes(q);
-    })
-    .sort((a,b) => new Date(a.dueAt) - new Date(b.dueAt));
-
-  if (cards.length === 0) {
-    list.innerHTML = `<div class="muted">No cards match.</div>`;
-    return;
-  }
-
-  cards.forEach(card => {
-    const div = document.createElement("div");
-    div.className = "item";
-    div.innerHTML = `
-      <div class="item-top">
-        <div class="item-words">
-          <div><strong>${escapeHtml(card.front)}</strong> → ${escapeHtml(card.back)}</div>
-          <div class="muted small">
-            Due: ${new Date(card.dueAt).toLocaleDateString()} • ${stateLabel(card)} • Interval ${card.intervalDays}d • Ease ${card.ease.toFixed(2)}
-          </div>
-        </div>
-        <div class="item-actions">
-          <button class="ghost" data-action="edit" data-id="${card.id}">Edit</button>
-          <button class="danger" data-action="del" data-id="${card.id}">Delete</button>
-        </div>
-      </div>
-      ${card.example ? `<hr class="sep"><div class="muted">${escapeHtml(card.example)}</div>` : ""}
-      ${(card.tags && card.tags.length) ? `<div class="tags" style="margin-top:10px">${card.tags.map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join("")}</div>` : ""}
-    `;
-    list.appendChild(div);
-  });
-}
-
-function escapeHtml(str) {
+function escapeHtml(str){
   return String(str).replace(/[&<>"']/g, s => ({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
   }[s]));
 }
 
-$("#deck-list").addEventListener("click", (e) => {
-  const btn = e.target.closest("button[data-action]");
-  if (!btn) return;
-  const id = btn.dataset.id;
-  const action = btn.dataset.action;
-  const card = state.cards.find(c => c.id === id);
-  if (!card) return;
+// --- Reveal + grade buttons ---
+$("btnReveal").onclick = () => {
+  if (!current) return;
+  revealed = true;
+  $("backArea").style.display = "block";
+};
 
-  if (action === "del") {
-    if (!confirm("Delete this card?")) return;
-    state.cards = state.cards.filter(c => c.id !== id);
-    saveState(state);
-    renderAll();
-  }
+async function gradeCurrent(grade) {
+  if (!current) return;
+  const nextSrs = applySRS(current, grade);
 
-  if (action === "edit") {
-    const newFront = prompt("German (front):", card.front);
-    if (newFront === null) return;
-    const newBack = prompt("English (back):", card.back);
-    if (newBack === null) return;
-    const newExample = prompt("Example (optional):", card.example || "");
-    if (newExample === null) return;
-    const newTags = prompt("Tags (comma-separated):", (card.tags || []).join(", "));
-    if (newTags === null) return;
+  const ref = doc(db, `users/${user.uid}/cards/${current.id}`);
+  await updateDoc(ref, { ...nextSrs, updatedAt: serverTimestamp() });
 
-    card.front = newFront.trim();
-    card.back = newBack.trim();
-    card.example = (newExample || "").trim();
-    card.tags = (newTags || "").split(",").map(t=>t.trim()).filter(Boolean);
-    card.updatedAt = nowISO();
-    saveState(state);
-    renderAll();
-  }
-});
-
-$("#search").addEventListener("input", renderDeck);
-$("#filter").addEventListener("change", renderDeck);
-
-// ------- Backup -------
-$("#btn-export").addEventListener("click", () => {
-  const blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(blob);
-  a.download = `flashcards-backup-${new Date().toISOString().slice(0,10)}.json`;
-  a.click();
-  URL.revokeObjectURL(a.href);
-});
-
-$("#in-import").addEventListener("change", async (e) => {
-  const file = e.target.files?.[0];
-  if (!file) return;
-  const text = await file.text();
-  try {
-    const imported = JSON.parse(text);
-    if (!imported || !Array.isArray(imported.cards)) throw new Error("Invalid file");
-    // basic sanitize
-    imported.cards = imported.cards.map(c => ({
-      id: c.id || uid(),
-      front: String(c.front || "").trim(),
-      back: String(c.back || "").trim(),
-      example: String(c.example || ""),
-      tags: Array.isArray(c.tags) ? c.tags.map(String) : [],
-      createdAt: c.createdAt || nowISO(),
-      updatedAt: nowISO(),
-      dueAt: c.dueAt || todayISO(),
-      intervalDays: Number(c.intervalDays ?? 0),
-      ease: Number(c.ease ?? 2.5),
-      reps: Number(c.reps ?? 0),
-      lapses: Number(c.lapses ?? 0),
-      state: c.state || "new",
-    })).filter(c => c.front && c.back);
-
-    state = imported;
-    saveState(state);
-    alert("Import successful!");
-    e.target.value = "";
-    renderAll();
-  } catch {
-    alert("Import failed. Please select a valid exported JSON file.");
-  }
-});
-
-$("#btn-reset").addEventListener("click", () => {
-  if (!confirm("This will delete all cards from this browser. Continue?")) return;
-  state = { cards: [] };
-  saveState(state);
-  renderAll();
-});
-
-// ------- Stats & initial render -------
-function renderStats() {
-  const total = state.cards.length;
-  const due = state.cards.filter(isDue).length;
-  const newly = state.cards.filter(c => c.state === "new").length;
-  $("#stat-total").textContent = total;
-  $("#stat-due").textContent = due;
-  $("#stat-new").textContent = newly;
+  await refreshStudy();
 }
 
-function renderAll() {
-  renderStats();
-  renderDeck();
-  // If we're on study tab, ensure there's something loaded
-  const studyPanelActive = $("#tab-study").classList.contains("active");
-  if (studyPanelActive) {
-    // If current card is missing or not due, pick next
-    const current = state.cards.find(c => c.id === currentId);
-    if (!current || !isDue(current)) showNext();
-  }
-}
+$("btnAgain").onclick = () => gradeCurrent(0);
+$("btnEasy").onclick = () => gradeCurrent(5);
 
-// first load
-renderAll();
-showNext();
+// --- Tinder swipe (left/right) ---
+const swipeEl = $("swipeCard");
+let startX = 0, curX = 0, dragging = false;
+
+swipeEl.addEventListener("pointerdown", (e) => {
+  if (!current || !revealed) return; // require reveal first
+  dragging = true;
+  startX = e.clientX;
+  swipeEl.setPointerCapture(e.pointerId);
+});
+
+swipeEl.addEventListener("pointermove", (e) => {
+  if (!dragging) return;
+  curX = e.clientX - startX;
+  swipeEl.style.transform = `translateX(${curX}px) rotate(${curX/18}deg)`;
+});
+
+swipeEl.addEventListener("pointerup", async () => {
+  if (!dragging) return;
+  dragging = false;
+
+  const x = curX;
+  curX = 0;
+
+  // threshold
+  if (x < -120) {
+    swipeEl.style.transform = "translateX(-420px) rotate(-12deg)";
+    setTimeout(()=> swipeEl.style.transform = "", 120);
+    await gradeCurrent(0); // Again
+  } else if (x > 120) {
+    swipeEl.style.transform = "translateX(420px) rotate(12deg)";
+    setTimeout(()=> swipeEl.style.transform = "", 120);
+    await gradeCurrent(5); // Easy
+  } else {
+    swipeEl.style.transform = "";
+  }
+});
