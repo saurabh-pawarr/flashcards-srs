@@ -12,124 +12,258 @@
       <div class="logo">FC</div>
       <div>
         <div class="title">Flashcards</div>
-        <div class="subtitle">Type → Translate → Swipe / Rate → Sync</div>
+        <div class="subtitle">Learn & Practice</div>
       </div>
     </div>
 
     <div class="userbar" id="userbar" style="display:none;">
+      <button class="btn ghost" id="btnTheme" title="Toggle theme">🌙</button>
       <span class="pill" id="userEmail">—</span>
       <button class="btn ghost" id="btnLogout">Logout</button>
     </div>
   </header>
 
   <main class="wrap">
-    <!-- LOGIN (hidden after login) -->
-    <section class="card" id="loginCard">
-      <h2>Login</h2>
-      <div class="grid2">
-        <label>
-          Email
-          <input id="email" type="email" autocomplete="email" placeholder="you@email.com">
-        </label>
-        <label>
-          Password
-          <input id="password" type="password" autocomplete="current-password" placeholder="••••••••">
-        </label>
-      </div>
-      <div class="row">
-        <button class="btn primary" id="btnLogin">Login</button>
-        <span class="muted" id="loginStatus"></span>
-      </div>
-      <div class="muted small">
-        Note: This app is private because your Firestore rules restrict access to your own UID.
-      </div>
-    </section>
-
-    <!-- ADD / GENERATE -->
-    <section class="card" id="addCard" style="display:none;">
-      <h2>Add a word / phrase</h2>
-
-      <div class="row">
-        <select id="sourceLang" class="select">
-          <option value="auto">Auto-detect</option>
-          <option value="de" selected>German (de)</option>
-          <option value="en">English (en)</option>
-          <option value="fr">French (fr)</option>
-          <option value="es">Spanish (es)</option>
-          <option value="it">Italian (it)</option>
-          <option value="hi">Hindi (hi)</option>
-        </select>
-
-        <button class="btn primary" id="btnTranslate">Translate + Save</button>
-        <button class="btn ghost" id="btnClear">Clear</button>
-      </div>
-
-      <textarea id="phrase" class="textarea" rows="3" placeholder="Type your German word or sentence here…"></textarea>
-      <div class="muted small" id="addStatus"></div>
-
-      <div class="preview" id="preview" style="display:none;">
-        <div class="kv">
-          <div><span class="muted">Detected:</span> <b id="pLang">—</b></div>
-          <div><span class="muted">English:</span> <b id="pEn">—</b></div>
+    <!-- LOGIN PAGE -->
+    <section id="loginPage" style="display:none;">
+      <div class="card" style="max-width: 400px; margin: 40px auto;">
+        <h2>Login</h2>
+        <div class="grid2">
+          <label>
+            Email
+            <input id="email" type="email" autocomplete="email" placeholder="you@email.com">
+          </label>
+          <label>
+            Password
+            <input id="password" type="password" autocomplete="current-password" placeholder="••••••••">
+          </label>
         </div>
-        <div class="muted small" style="margin-top:10px;">Examples</div>
-        <ul id="pExamples" class="examples"></ul>
-      </div>
-    </section>
-
-    <!-- STUDY -->
-    <section class="card" id="studyCard" style="display:none;">
-      <div class="studyTop">
-        <h2>Study</h2>
-        <div class="muted small" id="stats">—</div>
-      </div>
-
-      <div class="swipeStage">
-        <div id="swipeCard" class="swipeCard">
-          <div class="chip" id="chipState">DUE</div>
-
-          <div class="label">WORD / PHRASE</div>
-          <div class="big" id="frontText">—</div>
-          <div class="muted small" id="frontMeta"></div>
-
-          <div class="divider"></div>
-
-          <div id="backArea" style="display:none;">
-            <div class="label">MEANING (ENGLISH)</div>
-            <div class="big2" id="backText">—</div>
-            <div class="muted small" id="backExamples"></div>
-          </div>
-
-          <div class="muted small hint" id="swipeHint">
-            Tap <b>Reveal</b> then swipe ⟵ / ⟶ or use buttons.
-          </div>
+        <div class="row">
+          <button class="btn primary" id="btnLogin">Login</button>
+          <span class="muted" id="loginStatus"></span>
+        </div>
+        <div class="muted small">
+          Note: This app is private because your Firestore rules restrict access to your own UID.
         </div>
       </div>
-
-      <div class="row">
-        <button class="btn" id="btnReveal">Reveal</button>
-
-        <!-- Buttons similar to your sketch -->
-        <button class="btn bad" id="btnAgain">Again (today)</button>
-        <button class="btn warn" id="btnHard">Hard (1 day)</button>
-        <button class="btn ok" id="btnGood">Good (1 week)</button>
-        <button class="btn good" id="btnEasy">Easy (1 month)</button>
-
-        <button class="btn danger" id="btnDelete">Delete</button>
-      </div>
     </section>
 
-    <!-- LIST / DELETE -->
-    <section class="card" id="listCard" style="display:none;">
-      <div class="studyTop">
-        <h2>My words</h2>
-        <input id="search" class="input" placeholder="Search…" />
+    <!-- APP PAGE (multi-column layout) -->
+    <section id="appPage" style="display:none;">
+      <div class="pageGrid">
+        <!-- LEFT: ADD CARD SECTION -->
+        <div class="card">
+          <h2>Add Card</h2>
+
+          <!-- Mode Toggle -->
+          <div class="modeGroup">
+            <button class="btn" id="modeManual" style="flex: 1; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); color: white;">Manual Entry</button>
+            <button class="btn ghost" id="modeTranslate" style="flex: 1;">Auto-Translate</button>
+            <button class="btn ghost" id="modePDF" style="flex: 1;">📄 PDF Upload</button>
+            <button class="btn ghost" id="modeA1" style="flex: 1;">🇩🇪 A1 Words</button>
+          </div>
+
+          <!-- MANUAL MODE -->
+          <div id="manualMode" style="display: block;">
+            <label style="display: grid; gap: 6px; margin-bottom: 12px;">
+              <span class="muted small">German Word / Phrase</span>
+              <input id="phraseInput" type="text" class="input" placeholder="Type German word…" />
+            </label>
+
+            <label style="display: grid; gap: 6px; margin-bottom: 12px;">
+              <span class="muted small">English Meaning</span>
+              <input id="translationInput" type="text" class="input" placeholder="Type English translation…" />
+            </label>
+
+            <div class="row">
+              <button class="btn primary" id="btnSaveCard" style="flex: 1;">+ Add Card</button>
+              <button class="btn ghost" id="btnClearCard" style="flex: 1;">Clear</button>
+            </div>
+          </div>
+
+          <!-- AUTO-TRANSLATE MODE -->
+          <div id="translateMode" style="display: none;">
+            <label style="display: grid; gap: 6px; margin-bottom: 12px;">
+              <span class="muted small">Language</span>
+              <select id="sourceLang" class="select">
+                <option value="auto">Auto-detect</option>
+                <option value="de" selected>German</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="es">Spanish</option>
+                <option value="it">Italian</option>
+              </select>
+            </label>
+
+            <label style="display: grid; gap: 6px; margin-bottom: 12px;">
+              <span class="muted small">Word / Phrase</span>
+              <textarea id="phrase" class="textarea" rows="3" placeholder="Type word…"></textarea>
+            </label>
+
+            <div class="row">
+              <button class="btn primary" id="btnTranslate" style="flex: 1;">Translate</button>
+              <button class="btn ghost" id="btnClear" style="flex: 1;">Clear</button>
+            </div>
+
+            <!-- Preview after translation -->
+            <div id="preview" style="display:none; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);">
+              <div style="background: rgba(99,102,241,.08); border-radius: 8px; padding: 10px; margin-bottom: 10px;">
+                <div class="kv">
+                  <div><span class="muted">Detected:</span> <b id="pLang">—</b></div>
+                  <div><span class="muted">Translation:</span> <b id="pEn">—</b></div>
+                </div>
+              </div>
+
+              <label style="display: grid; gap: 4px; margin-bottom: 10px;">
+                <span class="muted small">Edit translation (if needed):</span>
+                <input id="enInput" type="text" class="input" placeholder="English translation…" />
+              </label>
+
+              <button class="btn ok" id="btnSaveOverride" style="width: 100%;">✓ Save Card</button>
+            </div>
+          </div>
+
+          <!-- PDF MODE -->
+          <div id="pdfMode" style="display: none;">
+            <label style="display: grid; gap: 6px; margin-bottom: 12px;">
+              <span class="muted small">Upload PDF (A1, A2, or B1)</span>
+              <input id="pdfFile" type="file" accept=".pdf" class="input" style="padding: 8px;" />
+            </label>
+
+            <button class="btn primary" id="btnExtractPDF" style="width: 100%; margin-bottom: 12px;">📄 Extract Words</button>
+            
+            <div id="pdfStatus" class="muted small" style="margin-bottom: 12px;"></div>
+            
+            <div id="extractedWords" style="display: none;">
+              <div class="muted small" style="margin-bottom: 8px;">Extracted words (click to add):</div>
+              <div id="wordsList" style="display: grid; gap: 6px; max-height: 250px; overflow-y: auto;"></div>
+            </div>
+          </div>
+
+          <!-- A1 WORDS MODE -->
+          <div id="a1Mode" style="display: none;">
+            <button class="btn primary" id="btnLoadA1" style="width: 100%; margin-bottom: 12px; padding: 12px; font-size: 14px;">🎲 Load Random A1 Word</button>
+            
+            <div id="a1Preview" style="display: none;" class="a1PreviewCard">
+              <!-- TOP: WORD + ARTICLE -->
+              <div class="a1TopSection">
+                <div class="a1WordContainer">
+                  <div class="a1ArticleSmall" id="a1Article">—</div>
+                  <div class="a1MainWord" id="a1Word">—</div>
+                </div>
+                <div class="a1TypeSmall" id="a1Type">—</div>
+              </div>
+
+              <!-- MIDDLE: TRANSLATION -->
+              <div class="a1TranslationSection">
+                <div class="a1TranslationLabel">English Meaning</div>
+                <div class="a1TranslationValue" id="a1Meaning">—</div>
+              </div>
+              
+              <!-- BOTTOM: EXAMPLE -->
+              <div class="a1ExampleSection">
+                <div class="a1ExampleLabel">Example Sentence</div>
+                <div class="a1ExampleValue" id="a1Example">—</div>
+              </div>
+              
+              <div class="a1ButtonGroup">
+                <button class="btn ok" id="btnAddA1">✓ Add to My Words</button>
+                <button class="btn ghost" id="btnSkipA1">⏭ Next Word</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="muted small" id="addStatus" style="margin-top: 12px;"></div>
+        </div>
+
+        <!-- CENTER: STUDY SECTION -->
+        <div class="card">
+          <div class="studyTop">
+            <h2>Study</h2>
+            <div class="muted small" id="stats">—</div>
+          </div>
+
+          <div id="noCardsMsg" style="text-align: center; padding: 40px 20px; color: var(--muted);">
+            <div style="font-size: 2rem; margin-bottom: 10px;">📚</div>
+            <div style="font-weight: 600; margin-bottom: 5px;">No cards yet</div>
+            <div style="font-size: 0.85rem;">
+              Add words on the left first, then they'll appear here.
+            </div>
+          </div>
+
+          <div id="noStudyMsg" style="display:none; text-align: center; padding: 40px 20px; color: var(--muted);">
+            <div style="font-size: 2rem; margin-bottom: 10px;">✅</div>
+            <div style="font-weight: 600; margin-bottom: 5px;">All caught up!</div>
+            <div style="font-size: 0.85rem;">
+              No cards due today. Come back tomorrow or add more words.
+            </div>
+          </div>
+
+          <div id="studyArea" style="display:none;">
+            <!-- FLASHCARD WITH FLIP ANIMATION -->
+            <div class="flashcardContainer">
+              <div id="flashcard" class="flashcard">
+                <!-- FRONT (German) -->
+                <div class="flashcardFront">
+                  <div class="flashcardLabel">🇩🇪 GERMAN WORD</div>
+                  <div class="flashcardText" id="frontText">—</div>
+                  <div class="flashcardMeta" id="frontMeta"></div>
+                  <div class="flashcardHint">Click to reveal</div>
+                </div>
+                
+                <!-- BACK (English) -->
+                <div class="flashcardBack">
+                  <div class="flashcardLabel">🇬🇧 ENGLISH MEANING</div>
+                  <div class="flashcardText" id="backText">—</div>
+                  <div class="flashcardMeta" id="backExamples"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- RATING BUTTONS -->
+            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin-top: 20px;">
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                <button class="btn bad" id="btnAgain" title="Mark as difficult - review soon">❌</button>
+                <span style="font-size: 10px; color: var(--muted); text-align: center;">Again</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                <button class="btn warn" id="btnHard" title="Somewhat difficult">😐</button>
+                <span style="font-size: 10px; color: var(--muted); text-align: center;">Hard</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                <button class="btn ok" id="btnGood" title="Well remembered">👍</button>
+                <span style="font-size: 10px; color: var(--muted); text-align: center;">Good</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                <button class="btn good" id="btnEasy" title="Very easy - mastered">🎯</button>
+                <span style="font-size: 10px; color: var(--muted); text-align: center;">Easy</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 4px;">
+                <button class="btn danger" id="btnDelete" title="Remove this card">🗑️</button>
+                <span style="font-size: 10px; color: var(--muted); text-align: center;">Delete</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: WORDS LIST SECTION -->
+        <div class="card">
+          <div class="studyTop">
+            <h2>My Words</h2>
+            <input id="search" class="input" placeholder="Search…" style="flex: 1; max-width: 200px;" />
+          </div>
+          <div class="buttonGroup">
+            <button class="btn ghost" id="btnSelectAll">☑️ Select All</button>
+            <button class="btn danger" id="btnDeleteSelected" disabled>🗑️ Delete Selected</button>
+          </div>
+          <div id="list" class="list"></div>
+        </div>
       </div>
-      <div id="list" class="list"></div>
     </section>
 
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script type="module" src="app.js"></script>
 </body>
 </html>

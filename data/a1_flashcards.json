@@ -1,0 +1,8042 @@
+[
+  {
+    "level": "A1",
+    "front": {
+      "word": "ab",
+      "article": "",
+      "type": "Preposition/Adverb",
+      "example": "Ab morgen bin ich im Büro."
+    },
+    "back": {
+      "meaning": "from, starting from, as of"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "aber",
+      "article": "",
+      "type": "Conjunction",
+      "example": "Das ist teuer, aber schön."
+    },
+    "back": {
+      "meaning": "but, however"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "abfahren",
+      "article": "",
+      "type": "Verb",
+      "example": "Der Zug fährt um 9 Uhr ab."
+    },
+    "back": {
+      "meaning": "to depart, to leave"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "abgeben",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich gebe meine Arbeit ab."
+    },
+    "back": {
+      "meaning": "to hand in, to submit, to give away"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "abholen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich hole dich um 7 Uhr ab."
+    },
+    "back": {
+      "meaning": "to pick up, to collect"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Achtung",
+      "article": "",
+      "type": "Noun/Interjection",
+      "example": "Achtung! Achtung, bitte!"
+    },
+    "back": {
+      "meaning": "attention, caution, warning"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "allein",
+      "article": "",
+      "type": "Adjective/Adverb",
+      "example": "Ich bin allein zu Hause."
+    },
+    "back": {
+      "meaning": "alone, by oneself"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "also",
+      "article": "",
+      "type": "Conjunction/Adverb",
+      "example": "Also, ich komme morgen."
+    },
+    "back": {
+      "meaning": "so, then, well"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "alt",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Haus ist sehr alt."
+    },
+    "back": {
+      "meaning": "old, aged"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "an",
+      "article": "",
+      "type": "Preposition",
+      "example": "Ich wohne an der Straße."
+    },
+    "back": {
+      "meaning": "at, on, to"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "anbieten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich biete dir Kaffee an."
+    },
+    "back": {
+      "meaning": "to offer"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ander-",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der andere Mann kommt auch."
+    },
+    "back": {
+      "meaning": "other, different, another"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "anfangen",
+      "article": "",
+      "type": "Verb",
+      "example": "Die Schule fängt um 8 Uhr an."
+    },
+    "back": {
+      "meaning": "to start, to begin"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "anklicken",
+      "article": "",
+      "type": "Verb",
+      "example": "Bitte klicke den Link an."
+    },
+    "back": {
+      "meaning": "to click on"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ankommen",
+      "article": "",
+      "type": "Verb",
+      "example": "Der Zug kommt um 10 Uhr an."
+    },
+    "back": {
+      "meaning": "to arrive"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ankreuzen",
+      "article": "",
+      "type": "Verb",
+      "example": "Kreuze die Antwort an."
+    },
+    "back": {
+      "meaning": "to mark, to cross"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "anmachen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich mache das Licht an."
+    },
+    "back": {
+      "meaning": "to turn on"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "anmelden",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich melde mich an."
+    },
+    "back": {
+      "meaning": "to register"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "anrufen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich rufe dich an."
+    },
+    "back": {
+      "meaning": "to call, to phone"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "antworten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich antworte auf die Frage."
+    },
+    "back": {
+      "meaning": "to answer"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "anziehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich ziehe ein Kleid an."
+    },
+    "back": {
+      "meaning": "to put on, to wear"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "arbeiten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich arbeite jeden Tag."
+    },
+    "back": {
+      "meaning": "to work"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "arbeitslos",
+      "article": "",
+      "type": "Adjective",
+      "example": "Er ist arbeitslos."
+    },
+    "back": {
+      "meaning": "unemployed"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "auch",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich komme auch."
+    },
+    "back": {
+      "meaning": "also, too"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "auf",
+      "article": "",
+      "type": "Preposition",
+      "example": "Das Buch liegt auf dem Tisch."
+    },
+    "back": {
+      "meaning": "on, upon"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "aufhören",
+      "article": "",
+      "type": "Verb",
+      "example": "Die Schule hört um 3 Uhr auf."
+    },
+    "back": {
+      "meaning": "to stop, to end"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "aufstehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich stehe um 7 Uhr auf."
+    },
+    "back": {
+      "meaning": "to get up"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "aus",
+      "article": "",
+      "type": "Preposition",
+      "example": "Ich komme aus Deutschland."
+    },
+    "back": {
+      "meaning": "from, out of"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ausfüllen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich fülle das Formular aus."
+    },
+    "back": {
+      "meaning": "to fill out"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ausländisch",
+      "article": "",
+      "type": "Adjective",
+      "example": "Ein ausländischer Freund."
+    },
+    "back": {
+      "meaning": "foreign"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ausmachen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich mache das Licht aus."
+    },
+    "back": {
+      "meaning": "to turn off"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "aussehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Das Essen sieht gut aus."
+    },
+    "back": {
+      "meaning": "to look, to appear"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "aussteigen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich steige aus dem Bus aus."
+    },
+    "back": {
+      "meaning": "to get out"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ausziehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich ziehe meine Jacke aus."
+    },
+    "back": {
+      "meaning": "to take off"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "automatisch",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist automatisch."
+    },
+    "back": {
+      "meaning": "automatic"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "baden",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bade gerne."
+    },
+    "back": {
+      "meaning": "to bathe"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bald",
+      "article": "",
+      "type": "Adverb",
+      "example": "Bald ist Weihnachten."
+    },
+    "back": {
+      "meaning": "soon"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bar",
+      "article": "",
+      "type": "Adjective",
+      "example": "Ich zahle bar."
+    },
+    "back": {
+      "meaning": "in cash"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bedeuten",
+      "article": "",
+      "type": "Verb",
+      "example": "Was bedeutet dieses Wort?"
+    },
+    "back": {
+      "meaning": "to mean"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "beginnen",
+      "article": "",
+      "type": "Verb",
+      "example": "Der Film beginnt um 20 Uhr."
+    },
+    "back": {
+      "meaning": "to begin"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bei",
+      "article": "",
+      "type": "Preposition",
+      "example": "Ich wohne bei meinen Eltern."
+    },
+    "back": {
+      "meaning": "at, with"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "beide",
+      "article": "",
+      "type": "Adjective",
+      "example": "Beide sind schön."
+    },
+    "back": {
+      "meaning": "both"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bekannt",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Lied ist sehr bekannt."
+    },
+    "back": {
+      "meaning": "famous"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bekommen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bekomme ein Geschenk."
+    },
+    "back": {
+      "meaning": "to get"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "benutzen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich benutze einen Stift."
+    },
+    "back": {
+      "meaning": "to use"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "besetzt",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Stuhl ist besetzt."
+    },
+    "back": {
+      "meaning": "occupied"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "besichtigen",
+      "article": "",
+      "type": "Verb",
+      "example": "Wir besichtigen die Stadt."
+    },
+    "back": {
+      "meaning": "to visit"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "besser",
+      "article": "",
+      "type": "Adjective",
+      "example": "Dein Buch ist besser."
+    },
+    "back": {
+      "meaning": "better"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "best-",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Beste ist hier."
+    },
+    "back": {
+      "meaning": "best"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bestellen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bestelle einen Kaffee."
+    },
+    "back": {
+      "meaning": "to order"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "besuchen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich besuche meine Großmutter."
+    },
+    "back": {
+      "meaning": "to visit"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bezahlen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bezahle die Rechnung."
+    },
+    "back": {
+      "meaning": "to pay"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "billig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist billig."
+    },
+    "back": {
+      "meaning": "cheap"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bis",
+      "article": "",
+      "type": "Conjunction",
+      "example": "Bis bald!"
+    },
+    "back": {
+      "meaning": "until, till"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bisschen",
+      "article": "",
+      "type": "Adjective",
+      "example": "Ein bisschen Zucker."
+    },
+    "back": {
+      "meaning": "a little"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bitte",
+      "article": "",
+      "type": "Adverb",
+      "example": "Bitte, komm herein!"
+    },
+    "back": {
+      "meaning": "please"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bitte",
+      "article": "",
+      "type": "Adverb",
+      "example": "Bitte, komm herein!"
+    },
+    "back": {
+      "meaning": "please"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bitten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bitte dich."
+    },
+    "back": {
+      "meaning": "to ask"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bitter",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Kaffee ist bitter."
+    },
+    "back": {
+      "meaning": "bitter"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bleiben",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bleibe hier."
+    },
+    "back": {
+      "meaning": "to stay"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "böse",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Mann ist böse."
+    },
+    "back": {
+      "meaning": "angry"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "brauchen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich brauche Wasser."
+    },
+    "back": {
+      "meaning": "to need"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "breit",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Fluss ist breit."
+    },
+    "back": {
+      "meaning": "wide"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "bringen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bringe dir Kaffee."
+    },
+    "back": {
+      "meaning": "to bring"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "buchstabieren",
+      "article": "",
+      "type": "Verb",
+      "example": "Buchstabiere deinen Namen."
+    },
+    "back": {
+      "meaning": "to spell"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "circa",
+      "article": "",
+      "type": "Adverb",
+      "example": "Circa 20 Menschen."
+    },
+    "back": {
+      "meaning": "about"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "da",
+      "article": "",
+      "type": "Adverb",
+      "example": "Da ist ein Vogel."
+    },
+    "back": {
+      "meaning": "there"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "daneben",
+      "article": "",
+      "type": "Adverb",
+      "example": "Die Schule ist daneben."
+    },
+    "back": {
+      "meaning": "next to it"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "danken",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich danke dir."
+    },
+    "back": {
+      "meaning": "to thank"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "dann",
+      "article": "",
+      "type": "Adverb",
+      "example": "Erst arbeite ich, dann spiele ich."
+    },
+    "back": {
+      "meaning": "then"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "dauern",
+      "article": "",
+      "type": "Verb",
+      "example": "Das dauert zwei Stunden."
+    },
+    "back": {
+      "meaning": "to last"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "dein",
+      "article": "",
+      "type": "Possessive",
+      "example": "Das ist dein Buch."
+    },
+    "back": {
+      "meaning": "your"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "denn",
+      "article": "",
+      "type": "Conjunction",
+      "example": "Ich komme, denn ich will dich sehen."
+    },
+    "back": {
+      "meaning": "because"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "der/die/das",
+      "article": "",
+      "type": "Article",
+      "example": "Der Mann, die Frau, das Kind."
+    },
+    "back": {
+      "meaning": "the"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "dich",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Ich sehe dich."
+    },
+    "back": {
+      "meaning": "you"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "dies-",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Dieser Stuhl ist schön."
+    },
+    "back": {
+      "meaning": "this"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "dir",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Ich gebe dir ein Buch."
+    },
+    "back": {
+      "meaning": "you"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "dort",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich bin dort gewesen."
+    },
+    "back": {
+      "meaning": "there"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "draußen",
+      "article": "",
+      "type": "Adverb",
+      "example": "Das Wetter ist draußen schön."
+    },
+    "back": {
+      "meaning": "outside"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "drucken",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich drucke das Dokument."
+    },
+    "back": {
+      "meaning": "to print"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "drücken",
+      "article": "",
+      "type": "Verb",
+      "example": "Drücke den Button."
+    },
+    "back": {
+      "meaning": "to press"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "durch",
+      "article": "",
+      "type": "Preposition",
+      "example": "Ich gehe durch die Tür."
+    },
+    "back": {
+      "meaning": "through"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "dürfen",
+      "article": "",
+      "type": "Modal Verb",
+      "example": "Darf ich trinken?"
+    },
+    "back": {
+      "meaning": "may, to be allowed"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "duschen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich dusche morgens."
+    },
+    "back": {
+      "meaning": "to shower"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "eilig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist eilig."
+    },
+    "back": {
+      "meaning": "urgent"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ein",
+      "article": "",
+      "type": "Article",
+      "example": "Ein Buch liegt auf dem Tisch."
+    },
+    "back": {
+      "meaning": "a, an"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "einfach",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist einfach."
+    },
+    "back": {
+      "meaning": "simple"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "einkaufen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich gehe einkaufen."
+    },
+    "back": {
+      "meaning": "to shop"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "einladen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich lade dich ein."
+    },
+    "back": {
+      "meaning": "to invite"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "einmal",
+      "article": "",
+      "type": "Adverb",
+      "example": "Einmal war ich krank."
+    },
+    "back": {
+      "meaning": "once"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "einsteigen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich steige in den Zug ein."
+    },
+    "back": {
+      "meaning": "to board"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "empfehlen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich empfehle das Restaurant."
+    },
+    "back": {
+      "meaning": "to recommend"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "enden",
+      "article": "",
+      "type": "Verb",
+      "example": "Der Film endet um 22 Uhr."
+    },
+    "back": {
+      "meaning": "to end"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "entschuldigen",
+      "article": "",
+      "type": "Verb",
+      "example": "Entschuldige, bitte!"
+    },
+    "back": {
+      "meaning": "to excuse"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "er",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Er ist ein Junge."
+    },
+    "back": {
+      "meaning": "he"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "erklären",
+      "article": "",
+      "type": "Verb",
+      "example": "Erkläre mir das bitte."
+    },
+    "back": {
+      "meaning": "to explain"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "erlauben",
+      "article": "",
+      "type": "Verb",
+      "example": "Mutter erlaubt es."
+    },
+    "back": {
+      "meaning": "to allow"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "erzählen",
+      "article": "",
+      "type": "Verb",
+      "example": "Erzähle mir eine Geschichte."
+    },
+    "back": {
+      "meaning": "to tell"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "es",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Es ist schön."
+    },
+    "back": {
+      "meaning": "it"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "essen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich esse Brot."
+    },
+    "back": {
+      "meaning": "to eat"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Essen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich esse Brot."
+    },
+    "back": {
+      "meaning": "to eat"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "euer",
+      "article": "",
+      "type": "Possessive",
+      "example": "Das ist euer Haus."
+    },
+    "back": {
+      "meaning": "your"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "fahren",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich fahre mit dem Auto."
+    },
+    "back": {
+      "meaning": "to drive"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "falsch",
+      "article": "",
+      "type": "Adjective",
+      "example": "Die Antwort ist falsch."
+    },
+    "back": {
+      "meaning": "wrong"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "feiern",
+      "article": "",
+      "type": "Verb",
+      "example": "Wir feiern den Geburtstag."
+    },
+    "back": {
+      "meaning": "to celebrate"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "fehlen",
+      "article": "",
+      "type": "Verb",
+      "example": "Mir fehlt das Geld."
+    },
+    "back": {
+      "meaning": "to be missing"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "fernsehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich sehe fern."
+    },
+    "back": {
+      "meaning": "to watch TV"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "fertig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Bin ich fertig? Ja, fertig."
+    },
+    "back": {
+      "meaning": "done, finished"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "finden",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich finde meine Brille."
+    },
+    "back": {
+      "meaning": "to find"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "fliegen",
+      "article": "",
+      "type": "Verb",
+      "example": "Das Flugzeug fliegt."
+    },
+    "back": {
+      "meaning": "to fly"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "fragen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich frage den Lehrer."
+    },
+    "back": {
+      "meaning": "to ask"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "frei",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Stuhl ist frei."
+    },
+    "back": {
+      "meaning": "free"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "fremd",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist ein fremdes Land."
+    },
+    "back": {
+      "meaning": "foreign"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "freuen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich freue mich."
+    },
+    "back": {
+      "meaning": "to be happy"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "früher",
+      "article": "",
+      "type": "Adverb",
+      "example": "Früher war ich jung."
+    },
+    "back": {
+      "meaning": "earlier"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "frühstücken",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich frühstücke um 8 Uhr."
+    },
+    "back": {
+      "meaning": "to have breakfast"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "führen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich führe dich."
+    },
+    "back": {
+      "meaning": "to lead"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "geben",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich gebe dir ein Buch."
+    },
+    "back": {
+      "meaning": "to give"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "geboren",
+      "article": "",
+      "type": "Adjective",
+      "example": "Ich bin 1990 geboren."
+    },
+    "back": {
+      "meaning": "born"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gefallen",
+      "article": "",
+      "type": "Verb",
+      "example": "Das Buch gefällt mir."
+    },
+    "back": {
+      "meaning": "to please"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gegen",
+      "article": "",
+      "type": "Preposition",
+      "example": "Ich spielte gegen dich."
+    },
+    "back": {
+      "meaning": "against"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich gehe zur Schule."
+    },
+    "back": {
+      "meaning": "to go"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gehören",
+      "article": "",
+      "type": "Verb",
+      "example": "Das Buch gehört mir."
+    },
+    "back": {
+      "meaning": "to belong"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gerade",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist gerade richtig."
+    },
+    "back": {
+      "meaning": "straight"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "geradeaus",
+      "article": "",
+      "type": "Adverb",
+      "example": "Gehe geradeaus."
+    },
+    "back": {
+      "meaning": "straight ahead"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gern",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich lese gern."
+    },
+    "back": {
+      "meaning": "gladly"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gestern",
+      "article": "",
+      "type": "Adverb",
+      "example": "Gestern war ich krank."
+    },
+    "back": {
+      "meaning": "yesterday"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gestorben",
+      "article": "",
+      "type": "Adjective",
+      "example": "Er ist 2020 gestorben."
+    },
+    "back": {
+      "meaning": "dead"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gewinnen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich gewinne das Spiel."
+    },
+    "back": {
+      "meaning": "to win"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "glauben",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich glaube dir."
+    },
+    "back": {
+      "meaning": "to believe"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gleich",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Kleid ist gleich."
+    },
+    "back": {
+      "meaning": "same"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "glücklich",
+      "article": "",
+      "type": "Adjective",
+      "example": "Ich bin glücklich."
+    },
+    "back": {
+      "meaning": "happy"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gratulieren",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich gratuliere dir."
+    },
+    "back": {
+      "meaning": "to congratulate"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "grillen",
+      "article": "",
+      "type": "Verb",
+      "example": "Wir grillen am Wochenende."
+    },
+    "back": {
+      "meaning": "to grill"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "groß",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Haus ist groß."
+    },
+    "back": {
+      "meaning": "big"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gültig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Ticket ist gültig."
+    },
+    "back": {
+      "meaning": "valid"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "günstig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist günstig."
+    },
+    "back": {
+      "meaning": "cheap"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "gut",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Essen ist gut."
+    },
+    "back": {
+      "meaning": "good"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "haben",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich habe ein Buch."
+    },
+    "back": {
+      "meaning": "to have"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "hallo",
+      "article": "",
+      "type": "Interjection",
+      "example": "Hallo! Wie geht es dir?"
+    },
+    "back": {
+      "meaning": "hello"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "halten",
+      "article": "",
+      "type": "Verb",
+      "example": "Halte meine Hand."
+    },
+    "back": {
+      "meaning": "to hold"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "heiraten",
+      "article": "",
+      "type": "Verb",
+      "example": "Wir heiraten morgen."
+    },
+    "back": {
+      "meaning": "to marry"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "heißen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich heiße Max."
+    },
+    "back": {
+      "meaning": "to be called"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "helfen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich helfe dir."
+    },
+    "back": {
+      "meaning": "to help"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "hell",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Zimmer ist hell."
+    },
+    "back": {
+      "meaning": "bright"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "herzlich",
+      "article": "",
+      "type": "Adjective",
+      "example": "Herzliche Grüße!"
+    },
+    "back": {
+      "meaning": "warm"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "heute",
+      "article": "",
+      "type": "Adverb",
+      "example": "Heute ist schönes Wetter."
+    },
+    "back": {
+      "meaning": "today"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "hier",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich bin hier."
+    },
+    "back": {
+      "meaning": "here"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "hinten",
+      "article": "",
+      "type": "Adverb",
+      "example": "Hinten ist das Badezimmer."
+    },
+    "back": {
+      "meaning": "at the back"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "hoch",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Haus ist hoch."
+    },
+    "back": {
+      "meaning": "high"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "holen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich hole das Buch."
+    },
+    "back": {
+      "meaning": "to fetch"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "hören",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich höre Musik."
+    },
+    "back": {
+      "meaning": "to hear"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Drucker",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Drucker funktioniert."
+    },
+    "back": {
+      "meaning": "printer"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Durchsage",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Durchsage im Zug."
+    },
+    "back": {
+      "meaning": "announcement"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Durst",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ich habe Durst."
+    },
+    "back": {
+      "meaning": "thirst"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Dusche",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Dusche ist warm."
+    },
+    "back": {
+      "meaning": "shower"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ecke",
+      "article": "die",
+      "type": "Noun",
+      "example": "Das Geschäft ist an der Ecke."
+    },
+    "back": {
+      "meaning": "corner"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ehefrau",
+      "article": "die",
+      "type": "Noun",
+      "example": "Seine Ehefrau heißt Maria."
+    },
+    "back": {
+      "meaning": "wife"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ehemann",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ihr Ehemann ist Lehrer."
+    },
+    "back": {
+      "meaning": "husband"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ei",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Ei ist weiß."
+    },
+    "back": {
+      "meaning": "egg"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Eingang",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Eingang ist offen."
+    },
+    "back": {
+      "meaning": "entrance"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Einladung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Einladung zum Fest."
+    },
+    "back": {
+      "meaning": "invitation"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Eintritt",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Eintritt kostet 5 Euro."
+    },
+    "back": {
+      "meaning": "admission"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Einzelzimmer",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Einzelzimmer für eine Person."
+    },
+    "back": {
+      "meaning": "single room"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Eltern",
+      "article": "die",
+      "type": "Noun",
+      "example": "Meine Eltern sind alt."
+    },
+    "back": {
+      "meaning": "parents"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "E-Mail",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine E-Mail kommt."
+    },
+    "back": {
+      "meaning": "email"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Empfänger",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Empfänger kennt den Brief."
+    },
+    "back": {
+      "meaning": "recipient"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ende",
+      "article": "das",
+      "type": "Noun",
+      "example": "Am Ende war es schön."
+    },
+    "back": {
+      "meaning": "end"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Entschuldigung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Ich bitte um Entschuldigung."
+    },
+    "back": {
+      "meaning": "apology"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ergebnis",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Ergebnis ist positiv."
+    },
+    "back": {
+      "meaning": "result"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Erwachsene",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Erwachsenen sind hier."
+    },
+    "back": {
+      "meaning": "adult"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fahrer",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Fahrer kennt die Stadt."
+    },
+    "back": {
+      "meaning": "driver"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fahrkarte",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Fahrkarte kostet 10 Euro."
+    },
+    "back": {
+      "meaning": "ticket"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fahrrad",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Fahrrad ist rot."
+    },
+    "back": {
+      "meaning": "bicycle"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Familie",
+      "article": "die",
+      "type": "Noun",
+      "example": "Meine Familie ist groß."
+    },
+    "back": {
+      "meaning": "family"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Familienname",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Familienname ist Schmidt."
+    },
+    "back": {
+      "meaning": "surname"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Familienstand",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Familienstand ist verheiratet."
+    },
+    "back": {
+      "meaning": "marital status"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Farbe",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Farbe rot ist schön."
+    },
+    "back": {
+      "meaning": "color"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fax",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Fax kommt."
+    },
+    "back": {
+      "meaning": "fax"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Feiertag",
+      "article": "der",
+      "type": "Noun",
+      "example": "Morgen ist Feiertag."
+    },
+    "back": {
+      "meaning": "holiday"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fehler",
+      "article": "der",
+      "type": "Noun",
+      "example": "Das ist ein Fehler."
+    },
+    "back": {
+      "meaning": "mistake"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Feuer",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Feuer brennt."
+    },
+    "back": {
+      "meaning": "fire"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fieber",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ich habe Fieber."
+    },
+    "back": {
+      "meaning": "fever"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Film",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Film ist gut."
+    },
+    "back": {
+      "meaning": "film"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Firma",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Firma ist groß."
+    },
+    "back": {
+      "meaning": "company"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fisch",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Fisch ist lecker."
+    },
+    "back": {
+      "meaning": "fish"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Flasche",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Flasche ist leer."
+    },
+    "back": {
+      "meaning": "bottle"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fleisch",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Fleisch ist rot."
+    },
+    "back": {
+      "meaning": "meat"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Flughafen",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Flughafen ist groß."
+    },
+    "back": {
+      "meaning": "airport"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Flugzeug",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Flugzeug startet."
+    },
+    "back": {
+      "meaning": "airplane"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Formular",
+      "article": "das",
+      "type": "Noun",
+      "example": "Fülle das Formular aus."
+    },
+    "back": {
+      "meaning": "form"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Foto",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Foto ist schön."
+    },
+    "back": {
+      "meaning": "photo"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Frage",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Frage ist schwer."
+    },
+    "back": {
+      "meaning": "question"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Frau",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Frau ist alt."
+    },
+    "back": {
+      "meaning": "woman"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Freizeit",
+      "article": "die",
+      "type": "Noun",
+      "example": "Meine Freizeit ist wichtig."
+    },
+    "back": {
+      "meaning": "leisure time"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Freund",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Freund ist nett."
+    },
+    "back": {
+      "meaning": "friend"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Frühstück",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Frühstück ist wichtig."
+    },
+    "back": {
+      "meaning": "breakfast"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fuß",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Fuß tut weh."
+    },
+    "back": {
+      "meaning": "foot"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Fußball",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ich spiele Fußball."
+    },
+    "back": {
+      "meaning": "football"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Garten",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Garten ist grün."
+    },
+    "back": {
+      "meaning": "garden"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Gast",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Gast ist willkommen."
+    },
+    "back": {
+      "meaning": "guest"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Geburtsjahr",
+      "article": "das",
+      "type": "Noun",
+      "example": "Mein Geburtsjahr ist 1990."
+    },
+    "back": {
+      "meaning": "year of birth"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Geburtsort",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Geburtsort ist Berlin."
+    },
+    "back": {
+      "meaning": "birthplace"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Geburtstag",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Geburtstag ist im März."
+    },
+    "back": {
+      "meaning": "birthday"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Geld",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ich habe viel Geld."
+    },
+    "back": {
+      "meaning": "money"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Gemüse",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Gemüse ist gesund."
+    },
+    "back": {
+      "meaning": "vegetables"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Gepäck",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Gepäck ist schwer."
+    },
+    "back": {
+      "meaning": "luggage"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Geschäft",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Geschäft ist offen."
+    },
+    "back": {
+      "meaning": "shop"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Geschenk",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Geschenk ist schön."
+    },
+    "back": {
+      "meaning": "gift"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Geschwister",
+      "article": "die",
+      "type": "Noun",
+      "example": "Meine Geschwister sind jung."
+    },
+    "back": {
+      "meaning": "siblings"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Gespräch",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Gespräch war lang."
+    },
+    "back": {
+      "meaning": "conversation"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Getränk",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Getränk ist kalt."
+    },
+    "back": {
+      "meaning": "beverage"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Gewicht",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Gewicht ist 70 kg."
+    },
+    "back": {
+      "meaning": "weight"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Glas",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Glas ist voll."
+    },
+    "back": {
+      "meaning": "glass"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Gleis",
+      "article": "das",
+      "type": "Noun",
+      "example": "Der Zug ist auf Gleis 5."
+    },
+    "back": {
+      "meaning": "track"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Glück",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das ist Glück."
+    },
+    "back": {
+      "meaning": "luck"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Glückwunsch",
+      "article": "der",
+      "type": "Noun",
+      "example": "Herzlichen Glückwunsch!"
+    },
+    "back": {
+      "meaning": "congratulations"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Grad",
+      "article": "der",
+      "type": "Noun",
+      "example": "Es sind 20 Grad."
+    },
+    "back": {
+      "meaning": "degree"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Größe",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Größe ist M."
+    },
+    "back": {
+      "meaning": "size"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Großeltern",
+      "article": "die",
+      "type": "Noun",
+      "example": "Meine Großeltern sind alt."
+    },
+    "back": {
+      "meaning": "grandparents"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Großmutter",
+      "article": "die",
+      "type": "Noun",
+      "example": "Meine Großmutter ist nett."
+    },
+    "back": {
+      "meaning": "grandmother"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Großvater",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Großvater ist alt."
+    },
+    "back": {
+      "meaning": "grandfather"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Gruppe",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Gruppe ist groß."
+    },
+    "back": {
+      "meaning": "group"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Gruß",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Gruß von mir."
+    },
+    "back": {
+      "meaning": "greeting"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Haar",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Haar ist lang."
+    },
+    "back": {
+      "meaning": "hair"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hähnchen",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Hähnchen ist lecker."
+    },
+    "back": {
+      "meaning": "chicken"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Halbpension",
+      "article": "die",
+      "type": "Noun",
+      "example": "Halbpension ist günstiger."
+    },
+    "back": {
+      "meaning": "half board"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Halle",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Halle ist groß."
+    },
+    "back": {
+      "meaning": "hall"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Haltestelle",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Bushaltestelle ist nah."
+    },
+    "back": {
+      "meaning": "bus stop"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hand",
+      "article": "die",
+      "type": "Noun",
+      "example": "Ich habe zwei Hände."
+    },
+    "back": {
+      "meaning": "hand"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Handy",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Handy ist neu."
+    },
+    "back": {
+      "meaning": "mobile phone"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Haus",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Haus ist alt."
+    },
+    "back": {
+      "meaning": "house"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hausaufgabe",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Hausaufgabe ist schwer."
+    },
+    "back": {
+      "meaning": "homework"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hausfrau",
+      "article": "die",
+      "type": "Noun",
+      "example": "Sie ist Hausfrau."
+    },
+    "back": {
+      "meaning": "housewife"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hausmann",
+      "article": "der",
+      "type": "Noun",
+      "example": "Er ist Hausmann."
+    },
+    "back": {
+      "meaning": "houseman"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Heimat",
+      "article": "die",
+      "type": "Noun",
+      "example": "Deutschland ist meine Heimat."
+    },
+    "back": {
+      "meaning": "homeland"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Herd",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Herd ist neu."
+    },
+    "back": {
+      "meaning": "stove"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Herr",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Herr ist alt."
+    },
+    "back": {
+      "meaning": "man, sir"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hilfe",
+      "article": "die",
+      "type": "Noun",
+      "example": "Hilfe! Hilfe bitte!"
+    },
+    "back": {
+      "meaning": "help"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hobby",
+      "article": "das",
+      "type": "Noun",
+      "example": "Mein Hobby ist Fußball."
+    },
+    "back": {
+      "meaning": "hobby"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hochzeit",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Hochzeit ist morgen."
+    },
+    "back": {
+      "meaning": "wedding"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hotel",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Hotel ist teuer."
+    },
+    "back": {
+      "meaning": "hotel"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hund",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Hund ist süß."
+    },
+    "back": {
+      "meaning": "dog"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Hunger",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ich habe Hunger."
+    },
+    "back": {
+      "meaning": "hunger"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Dame",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Dame ist freundlich."
+    },
+    "back": {
+      "meaning": "lady"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Dank",
+      "article": "der",
+      "type": "Noun",
+      "example": "Dank dir geht es mir gut."
+    },
+    "back": {
+      "meaning": "thanks, gratitude"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Abfahrt",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Abfahrt ist pünktlich."
+    },
+    "back": {
+      "meaning": "departure"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Absender",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Absender ist unbekannt."
+    },
+    "back": {
+      "meaning": "sender"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Adresse",
+      "article": "die",
+      "type": "Noun",
+      "example": "Was ist deine Adresse?"
+    },
+    "back": {
+      "meaning": "address"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Alter",
+      "article": "das",
+      "type": "Noun",
+      "example": "Wie alt bist du?"
+    },
+    "back": {
+      "meaning": "age"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Angebot",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Angebot ist gut."
+    },
+    "back": {
+      "meaning": "offer"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Anfang",
+      "article": "der",
+      "type": "Noun",
+      "example": "Am Anfang war es schwer."
+    },
+    "back": {
+      "meaning": "beginning"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ankunft",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Ankunft ist pünktlich."
+    },
+    "back": {
+      "meaning": "arrival"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Anmeldung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Anmeldung ist kostenlos."
+    },
+    "back": {
+      "meaning": "registration"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Anrede",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Anrede ist wichtig."
+    },
+    "back": {
+      "meaning": "form of address"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Anruf",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Anruf ist gekommen."
+    },
+    "back": {
+      "meaning": "phone call"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Anrufbeantworter",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Anrufbeantworter läuft."
+    },
+    "back": {
+      "meaning": "answering machine"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ansage",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Ansage im Flugzeug."
+    },
+    "back": {
+      "meaning": "announcement"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Anschluss",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Anschluss funktioniert."
+    },
+    "back": {
+      "meaning": "connection"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Antwort",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Antwort ist richtig."
+    },
+    "back": {
+      "meaning": "answer"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Anzeige",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Anzeige in der Zeitung."
+    },
+    "back": {
+      "meaning": "advertisement"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Apartment",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Apartment ist klein."
+    },
+    "back": {
+      "meaning": "apartment"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Apfel",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Apfel am Tag."
+    },
+    "back": {
+      "meaning": "apple"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Appetit",
+      "article": "der",
+      "type": "Noun",
+      "example": "Guten Appetit!"
+    },
+    "back": {
+      "meaning": "appetite"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Arbeit",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Arbeit ist schwer."
+    },
+    "back": {
+      "meaning": "work"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Arbeitsplatz",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Arbeitsplatz ist schön."
+    },
+    "back": {
+      "meaning": "workplace"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Arm",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Arm tut weh."
+    },
+    "back": {
+      "meaning": "arm"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Arzt",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Arzt ist nett."
+    },
+    "back": {
+      "meaning": "doctor"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Aufgabe",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Aufgabe ist schwierig."
+    },
+    "back": {
+      "meaning": "task"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Aufzug",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Aufzug ist schnell."
+    },
+    "back": {
+      "meaning": "elevator"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Auge",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ich habe zwei Augen."
+    },
+    "back": {
+      "meaning": "eye"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ausflug",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Ausflug am Wochenende."
+    },
+    "back": {
+      "meaning": "trip"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ausgang",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Ausgang ist links."
+    },
+    "back": {
+      "meaning": "exit"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Banane",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Banane ist gelb."
+    },
+    "back": {
+      "meaning": "banana"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bank",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Bank ist sicher."
+    },
+    "back": {
+      "meaning": "bank"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bauch",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Bauch tut weh."
+    },
+    "back": {
+      "meaning": "belly"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Baum",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Baum ist groß."
+    },
+    "back": {
+      "meaning": "tree"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bruder",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Bruder ist älter."
+    },
+    "back": {
+      "meaning": "brother"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Auskunft",
+      "article": "die",
+      "type": "Noun",
+      "example": "Ich gebe dir Auskunft."
+    },
+    "back": {
+      "meaning": "information"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ausland",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Ausland ist weit weg."
+    },
+    "back": {
+      "meaning": "foreign country"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ausländer",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Ausländer kommt aus Spanien."
+    },
+    "back": {
+      "meaning": "foreigner"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Aussage",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Aussage ist wichtig."
+    },
+    "back": {
+      "meaning": "statement"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ausweis",
+      "article": "der",
+      "type": "Noun",
+      "example": "Zeig mir deinen Ausweis."
+    },
+    "back": {
+      "meaning": "ID card"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Auto",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ich fahre mit dem Auto."
+    },
+    "back": {
+      "meaning": "car"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Autobahn",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Autobahn ist schnell."
+    },
+    "back": {
+      "meaning": "highway"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Automat",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Automat gibt Fahrkarten."
+    },
+    "back": {
+      "meaning": "machine"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Baby",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Baby schreit."
+    },
+    "back": {
+      "meaning": "baby"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bad",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Bad ist klein."
+    },
+    "back": {
+      "meaning": "bathroom"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bahn",
+      "article": "die",
+      "type": "Noun",
+      "example": "Ich fahre mit der Bahn."
+    },
+    "back": {
+      "meaning": "train"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bahnhof",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Bahnhof ist groß."
+    },
+    "back": {
+      "meaning": "train station"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bahnsteig",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Bahnsteig ist belebt."
+    },
+    "back": {
+      "meaning": "platform"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Balkon",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Balkon ist schön."
+    },
+    "back": {
+      "meaning": "balcony"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Beamte",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Beamte arbeitet für die Regierung."
+    },
+    "back": {
+      "meaning": "official"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bein",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ich habe zwei Beine."
+    },
+    "back": {
+      "meaning": "leg"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Beispiel",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Beispiel ist hilfreich."
+    },
+    "back": {
+      "meaning": "example"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bekannte",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Bekannte ruft an."
+    },
+    "back": {
+      "meaning": "acquaintance (female)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Beruf",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Beruf ist Lehrer."
+    },
+    "back": {
+      "meaning": "profession"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bett",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ich schlafe im Bett."
+    },
+    "back": {
+      "meaning": "bed"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bäckerei",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Bäckerei ist morgens offen."
+    },
+    "back": {
+      "meaning": "bakery"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bier",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Bier ist kalt."
+    },
+    "back": {
+      "meaning": "beer"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bild",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Bild ist schön."
+    },
+    "back": {
+      "meaning": "picture"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Birne",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Birne ist eine Frucht."
+    },
+    "back": {
+      "meaning": "pear"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bleistift",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Bleistift ist rot."
+    },
+    "back": {
+      "meaning": "pencil"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Blick",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Blick ist schnell."
+    },
+    "back": {
+      "meaning": "glance, look"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Blume",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Blume ist schön."
+    },
+    "back": {
+      "meaning": "flower"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bogen",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Bogen Papier."
+    },
+    "back": {
+      "meaning": "sheet, bow"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Brief",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Brief ist Post."
+    },
+    "back": {
+      "meaning": "letter"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Briefmarke",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Briefmarke zeigt Porto."
+    },
+    "back": {
+      "meaning": "stamp"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Brot",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Brot schmeckt gut."
+    },
+    "back": {
+      "meaning": "bread"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Brötchen",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Brötchen ist klein."
+    },
+    "back": {
+      "meaning": "roll (bread)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Buch",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Buch ist interessant."
+    },
+    "back": {
+      "meaning": "book"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Buchstabe",
+      "article": "der",
+      "type": "Noun",
+      "example": "A ist ein Buchstabe."
+    },
+    "back": {
+      "meaning": "letter"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Bus",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Bus ist öffentlich."
+    },
+    "back": {
+      "meaning": "bus"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Butter",
+      "article": "die",
+      "type": "Noun",
+      "example": "Butter schmeckt gut."
+    },
+    "back": {
+      "meaning": "butter"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Café",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Café ist gemütlich."
+    },
+    "back": {
+      "meaning": "café"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "CD",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine CD hat Musik."
+    },
+    "back": {
+      "meaning": "CD"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Chef",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Chef ist nett."
+    },
+    "back": {
+      "meaning": "my boss"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Computer",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ich nutze meinen Computer täglich."
+    },
+    "back": {
+      "meaning": "computer"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Datum",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Datum ist wichtig."
+    },
+    "back": {
+      "meaning": "date"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Disco",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Disco ist laut."
+    },
+    "back": {
+      "meaning": "disco"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Doktor",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Doktor behandelt Patienten."
+    },
+    "back": {
+      "meaning": "doctor"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Dorf",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Dorf ist klein."
+    },
+    "back": {
+      "meaning": "village"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Information",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Information ist wichtig."
+    },
+    "back": {
+      "meaning": "information"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Internet",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Internet ist schnell."
+    },
+    "back": {
+      "meaning": "internet"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Jacke",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Jacke ist warm."
+    },
+    "back": {
+      "meaning": "jacket"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Job",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Job ist spannend."
+    },
+    "back": {
+      "meaning": "job"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Jugendliche",
+      "article": "die",
+      "type": "Noun",
+      "example": "Ein Jugendlicher ist jung."
+    },
+    "back": {
+      "meaning": "young person"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kaffee",
+      "article": "der",
+      "type": "Noun",
+      "example": "Eine Tasse Kaffee bitte."
+    },
+    "back": {
+      "meaning": "coffee"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kind",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Kind ist jung."
+    },
+    "back": {
+      "meaning": "child"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kindergarten",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Kindergarten ist Schule."
+    },
+    "back": {
+      "meaning": "kindergarten"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kino",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Kino zeigt Filme."
+    },
+    "back": {
+      "meaning": "cinema"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Klasse",
+      "article": "die",
+      "type": "Noun",
+      "example": "Ich bin in Klasse 5."
+    },
+    "back": {
+      "meaning": "class"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kleidung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Kleidung ist wichtig."
+    },
+    "back": {
+      "meaning": "clothing"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "klein",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist klein."
+    },
+    "back": {
+      "meaning": "small"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lachen",
+      "article": "das",
+      "type": "Noun",
+      "example": "Sein Lachen ist ansteckend."
+    },
+    "back": {
+      "meaning": "laughter"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Land",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Land ist groß."
+    },
+    "back": {
+      "meaning": "country, land"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lange",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist lange."
+    },
+    "back": {
+      "meaning": "long"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "langsam",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist langsam."
+    },
+    "back": {
+      "meaning": "slow"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "laut",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist laut."
+    },
+    "back": {
+      "meaning": "loud"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "leben",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Leben ist schön."
+    },
+    "back": {
+      "meaning": "life"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Leben",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Leben ist schön."
+    },
+    "back": {
+      "meaning": "life"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Lebensmittel",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Lebensmittel sind frisch."
+    },
+    "back": {
+      "meaning": "foodstuffs"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Lehrer",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Lehrer sind engagiert."
+    },
+    "back": {
+      "meaning": "teachers"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Licht",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Licht ist hell."
+    },
+    "back": {
+      "meaning": "light"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lieben",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich liebe dich."
+    },
+    "back": {
+      "meaning": "to love"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lieber",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich trinke lieber Tee."
+    },
+    "back": {
+      "meaning": "preferably"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Lied",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Lied ist Musik."
+    },
+    "back": {
+      "meaning": "song"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "liegen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich liege im Bett."
+    },
+    "back": {
+      "meaning": "to lie"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "links",
+      "article": "",
+      "type": "Adverb",
+      "example": "Das ist links."
+    },
+    "back": {
+      "meaning": "left"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Lokal",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist lokal."
+    },
+    "back": {
+      "meaning": "local"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lustig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist lustig."
+    },
+    "back": {
+      "meaning": "funny"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "machen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich mache Hausaufgaben."
+    },
+    "back": {
+      "meaning": "to make, do"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Mädchen",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Mädchen sind jung."
+    },
+    "back": {
+      "meaning": "girls"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Mann",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Mann ist Person."
+    },
+    "back": {
+      "meaning": "man"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "männlich",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist männlich."
+    },
+    "back": {
+      "meaning": "masculine, male"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Maschine",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Maschine ist Gerät."
+    },
+    "back": {
+      "meaning": "machine"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Meer",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Meer ist groß."
+    },
+    "back": {
+      "meaning": "sea"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mein",
+      "article": "",
+      "type": "Possessive",
+      "example": "Das ist mein Buch."
+    },
+    "back": {
+      "meaning": "my"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mit",
+      "article": "",
+      "type": "Preposition",
+      "example": "Ich gehe mit dir."
+    },
+    "back": {
+      "meaning": "with"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Mitte",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Mitte ist Zentrum."
+    },
+    "back": {
+      "meaning": "middle"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "nach",
+      "article": "",
+      "type": "Preposition",
+      "example": "Ich gehe nach Hause."
+    },
+    "back": {
+      "meaning": "to, after"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "nächste",
+      "article": "",
+      "type": "Adjective",
+      "example": "Die nächste Woche."
+    },
+    "back": {
+      "meaning": "next"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Obst",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Obst ist Frucht."
+    },
+    "back": {
+      "meaning": "fruit"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Öl",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Öl ist Flüssigkeit."
+    },
+    "back": {
+      "meaning": "oil"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ordnung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Ordnung ist System."
+    },
+    "back": {
+      "meaning": "order"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ort",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Ort ist Platz."
+    },
+    "back": {
+      "meaning": "place"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Papier",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Papier ist Stoff."
+    },
+    "back": {
+      "meaning": "paper"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Papiere",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Papiere sind Dokumente."
+    },
+    "back": {
+      "meaning": "papers, documents"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Platz",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Platz ist Fläche."
+    },
+    "back": {
+      "meaning": "place, seat"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Polizei",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Polizei ist Behörde."
+    },
+    "back": {
+      "meaning": "police"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Preis",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Preis ist interessant."
+    },
+    "back": {
+      "meaning": "Price"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "rechts",
+      "article": "",
+      "type": "Preposition",
+      "example": "Rechts von mir."
+    },
+    "back": {
+      "meaning": "to the right of"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Regen",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist regen."
+    },
+    "back": {
+      "meaning": "active, busy"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "reisen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich reise nach Berlin."
+    },
+    "back": {
+      "meaning": "to travel"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Reise",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Reise ist Fahrt."
+    },
+    "back": {
+      "meaning": "journey, trip"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "reparieren",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich repariere den Auto."
+    },
+    "back": {
+      "meaning": "to repair"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Reparatur",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Reparatur ist Ausbesserung."
+    },
+    "back": {
+      "meaning": "repair"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Saft",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Saft ist Flüssigkeit."
+    },
+    "back": {
+      "meaning": "juice"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sagen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich sage die Wahrheit."
+    },
+    "back": {
+      "meaning": "to say, tell"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Salat",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Salat ist Speise."
+    },
+    "back": {
+      "meaning": "salad"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Salz",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Salz ist Gewürz."
+    },
+    "back": {
+      "meaning": "salt"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Wasser",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Wasser sind Gewässer."
+    },
+    "back": {
+      "meaning": "waters"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Zeit",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Zeit ist Periode."
+    },
+    "back": {
+      "meaning": "time"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Zeitung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Zeitung ist Periodikum."
+    },
+    "back": {
+      "meaning": "newspaper"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Doppelzimmer",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Doppelzimmer sind Zimmer."
+    },
+    "back": {
+      "meaning": "double rooms"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ich",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Ich bin hier."
+    },
+    "back": {
+      "meaning": "I"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ihr",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Ihr seid Studenten."
+    },
+    "back": {
+      "meaning": "you (plural)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "immer",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich bin immer hier."
+    },
+    "back": {
+      "meaning": "always"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "in",
+      "article": "",
+      "type": "Preposition",
+      "example": "Das Buch ist in dem Sack."
+    },
+    "back": {
+      "meaning": "in"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "international",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist international."
+    },
+    "back": {
+      "meaning": "international"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "jed-",
+      "article": "",
+      "type": "Adjective",
+      "example": "Jeder Student ist fleißig."
+    },
+    "back": {
+      "meaning": "each, every"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "jetzt",
+      "article": "",
+      "type": "Adverb",
+      "example": "Jetzt bin ich hier."
+    },
+    "back": {
+      "meaning": "now"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "jung",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Jung ist jung."
+    },
+    "back": {
+      "meaning": "young"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Junge",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Junge ist Kind."
+    },
+    "back": {
+      "meaning": "boy"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kaputt",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das Auto ist kaputt."
+    },
+    "back": {
+      "meaning": "broken"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Karte",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Karte ist Papier."
+    },
+    "back": {
+      "meaning": "map, ticket, card"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kartoffel",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Kartoffel ist Gemüse."
+    },
+    "back": {
+      "meaning": "potato"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kasse",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Kasse ist Platz zum Bezahlen."
+    },
+    "back": {
+      "meaning": "cash register, cashier"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kaufen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich kaufe ein Buch."
+    },
+    "back": {
+      "meaning": "to buy"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kein",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist kein Problem."
+    },
+    "back": {
+      "meaning": "no, not a"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kennen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich kenne dich."
+    },
+    "back": {
+      "meaning": "to know, to be acquainted with"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kennenlernen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich lerne ihn kennen."
+    },
+    "back": {
+      "meaning": "to meet, to get to know"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kiosk",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Kiosk ist Laden."
+    },
+    "back": {
+      "meaning": "kiosk"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "klar",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist klar."
+    },
+    "back": {
+      "meaning": "clear"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kochen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich koche Suppe."
+    },
+    "back": {
+      "meaning": "to cook"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Koffer",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Koffer sind Gepäck."
+    },
+    "back": {
+      "meaning": "suitcases"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kollege",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Kollege ist Arbeiter."
+    },
+    "back": {
+      "meaning": "colleague (male)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kommen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich komme morgen."
+    },
+    "back": {
+      "meaning": "to come"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "können",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich kann schwimmen."
+    },
+    "back": {
+      "meaning": "can, to be able to"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Konto",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Konto ist Bankkonten."
+    },
+    "back": {
+      "meaning": "account"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kopf",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Kopf ist Körperteil."
+    },
+    "back": {
+      "meaning": "head"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kosten",
+      "article": "",
+      "type": "Verb",
+      "example": "Das kostet zehn Euro."
+    },
+    "back": {
+      "meaning": "to cost"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "krank",
+      "article": "",
+      "type": "Adjective",
+      "example": "Er ist krank."
+    },
+    "back": {
+      "meaning": "sick, ill"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kriegen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich kriege ein Buch."
+    },
+    "back": {
+      "meaning": "to get, to receive"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Küche",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Küche ist Raum."
+    },
+    "back": {
+      "meaning": "kitchen"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kuchen",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Kuchen sind Gebäck."
+    },
+    "back": {
+      "meaning": "cakes"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kugelschreiber",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Kugelschreiber sind Stifte."
+    },
+    "back": {
+      "meaning": "ballpoint pens"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kühlschrank",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Kühlschrank ist Gerät."
+    },
+    "back": {
+      "meaning": "refrigerator"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kulturell",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist kulturell."
+    },
+    "back": {
+      "meaning": "cultural"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kümmern",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich kümmere mich um dich."
+    },
+    "back": {
+      "meaning": "to care for, to worry about"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kunde",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Kunde ist Person."
+    },
+    "back": {
+      "meaning": "customer (male)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Kurs",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Kurs ist Unterricht."
+    },
+    "back": {
+      "meaning": "course"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "kurz",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist kurz."
+    },
+    "back": {
+      "meaning": "short"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Laden",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich lade das Auto."
+    },
+    "back": {
+      "meaning": "to load"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lang",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist lang."
+    },
+    "back": {
+      "meaning": "long"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "laufen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich laufe schnell."
+    },
+    "back": {
+      "meaning": "to run, to walk"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ledig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Er ist ledig."
+    },
+    "back": {
+      "meaning": "single, unmarried"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "legen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich lege das Buch hier."
+    },
+    "back": {
+      "meaning": "to put, to lay"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "leicht",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist leicht."
+    },
+    "back": {
+      "meaning": "easy, light"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "leider",
+      "article": "",
+      "type": "Adverb",
+      "example": "Leider bin ich hier."
+    },
+    "back": {
+      "meaning": "unfortunately"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "leise",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist leise."
+    },
+    "back": {
+      "meaning": "quiet, soft"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lernen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich lerne Deutsch."
+    },
+    "back": {
+      "meaning": "to learn"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lesen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich lese ein Buch."
+    },
+    "back": {
+      "meaning": "to read"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Leute",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Leute sind freundlich."
+    },
+    "back": {
+      "meaning": "people"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Lkw",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der LKW ist groß."
+    },
+    "back": {
+      "meaning": "truck"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Lösung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Lösung ist einfach."
+    },
+    "back": {
+      "meaning": "solution"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Mensch",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Mensch ist Person."
+    },
+    "back": {
+      "meaning": "human"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mieten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich miete ein Auto."
+    },
+    "back": {
+      "meaning": "to rent"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Miete",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Miete ist teuer."
+    },
+    "back": {
+      "meaning": "rent"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Milch",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Milch ist weiß."
+    },
+    "back": {
+      "meaning": "milk"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Möbel",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Möbel sind Möbel."
+    },
+    "back": {
+      "meaning": "furniture"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Moment",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Moment bitte."
+    },
+    "back": {
+      "meaning": "moment"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Mund",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Mund ist rot."
+    },
+    "back": {
+      "meaning": "mouth"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Mutter",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Mutter ist Mama."
+    },
+    "back": {
+      "meaning": "mother"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Name",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Name ist Max."
+    },
+    "back": {
+      "meaning": "name"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Nummer",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Nummer ist lang."
+    },
+    "back": {
+      "meaning": "number"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Oma",
+      "article": "die",
+      "type": "Noun",
+      "example": "Meine Oma ist alt."
+    },
+    "back": {
+      "meaning": "grandmother"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Opa",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Opa ist alt."
+    },
+    "back": {
+      "meaning": "grandfather"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Partner",
+      "article": "der",
+      "type": "Noun",
+      "example": "Mein Partner ist nett."
+    },
+    "back": {
+      "meaning": "partner"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Partnerin",
+      "article": "die",
+      "type": "Noun",
+      "example": "Meine Partnerin ist Frau."
+    },
+    "back": {
+      "meaning": "partner (female)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Party",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Party ist lustig."
+    },
+    "back": {
+      "meaning": "party"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Pass",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Pass ist Dokument."
+    },
+    "back": {
+      "meaning": "passport"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Pause",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Pause ist kurz."
+    },
+    "back": {
+      "meaning": "break"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Plan",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Plan ist gut."
+    },
+    "back": {
+      "meaning": "plan"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Post",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Post ist wichtig."
+    },
+    "back": {
+      "meaning": "mail"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Postleitzahl",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Postleitzahl ist Nummer."
+    },
+    "back": {
+      "meaning": "postal code"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Praktikum",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Praktikum ist interessant."
+    },
+    "back": {
+      "meaning": "internship"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Praxis",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Praxis ist wichtig."
+    },
+    "back": {
+      "meaning": "practice"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Problem",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Problem ist groß."
+    },
+    "back": {
+      "meaning": "problem"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Prospekt",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Prospekt ist informativ."
+    },
+    "back": {
+      "meaning": "brochure"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Prüfung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Prüfung ist schwer."
+    },
+    "back": {
+      "meaning": "exam"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Raum",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Raum ist groß."
+    },
+    "back": {
+      "meaning": "room"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Rechnung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Rechnung ist teuer."
+    },
+    "back": {
+      "meaning": "invoice"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Reis",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Reis ist Getreide."
+    },
+    "back": {
+      "meaning": "rice"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Reisebüro",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Reisebüro ist Büro."
+    },
+    "back": {
+      "meaning": "travel agency"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Reiseführer",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Reiseführer ist Buch."
+    },
+    "back": {
+      "meaning": "travel guide"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Restaurant",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Restaurant ist teuer."
+    },
+    "back": {
+      "meaning": "restaurant"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Rezeption",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Rezeption ist Schalter."
+    },
+    "back": {
+      "meaning": "reception"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schild",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Schild ist Zeichen."
+    },
+    "back": {
+      "meaning": "sign"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schinken",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Schinken ist Fleisch."
+    },
+    "back": {
+      "meaning": "ham"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schluss",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Schluss ist Ende."
+    },
+    "back": {
+      "meaning": "end"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schlüssel",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Schlüssel sind Metall."
+    },
+    "back": {
+      "meaning": "keys"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schrank",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Schrank ist Möbel."
+    },
+    "back": {
+      "meaning": "closet"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schuh",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Schuh ist Kleidung."
+    },
+    "back": {
+      "meaning": "shoe"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schule",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Schule ist groß."
+    },
+    "back": {
+      "meaning": "school"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schüler",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Schüler ist Student."
+    },
+    "back": {
+      "meaning": "student"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schwester",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Schwester ist Frau."
+    },
+    "back": {
+      "meaning": "sister"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schwimmbad",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Schwimmbad ist Ort."
+    },
+    "back": {
+      "meaning": "pool"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "letzte",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist letzte."
+    },
+    "back": {
+      "meaning": "last"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "lieb",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist lieb."
+    },
+    "back": {
+      "meaning": "dear, lovely"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "man",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Man sagt es."
+    },
+    "back": {
+      "meaning": "one, you (impersonal)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mehr",
+      "article": "",
+      "type": "Adjective/Adverb",
+      "example": "Ich möchte mehr."
+    },
+    "back": {
+      "meaning": "more"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mitbringen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bringe es mit."
+    },
+    "back": {
+      "meaning": "to bring along"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mitkommen",
+      "article": "",
+      "type": "Verb",
+      "example": "Komm mit."
+    },
+    "back": {
+      "meaning": "to come along"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mitmachen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich mache mit."
+    },
+    "back": {
+      "meaning": "to participate"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mitnehmen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich nehme ihn mit."
+    },
+    "back": {
+      "meaning": "to take along"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "mögen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich mag Schokolade."
+    },
+    "back": {
+      "meaning": "to like"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "möglich",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist möglich."
+    },
+    "back": {
+      "meaning": "possible"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "morgen",
+      "article": "",
+      "type": "Adverb",
+      "example": "Morgen komme ich."
+    },
+    "back": {
+      "meaning": "tomorrow"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "müde",
+      "article": "",
+      "type": "Adjective",
+      "example": "Ich bin müde."
+    },
+    "back": {
+      "meaning": "tired"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "müssen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich muss gehen."
+    },
+    "back": {
+      "meaning": "to have to"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "nehmen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich nehme es."
+    },
+    "back": {
+      "meaning": "to take"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "nein",
+      "article": "",
+      "type": "Interjection",
+      "example": "Nein, danke."
+    },
+    "back": {
+      "meaning": "no"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "neu",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist neu."
+    },
+    "back": {
+      "meaning": "new"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "nicht",
+      "article": "",
+      "type": "Adverb",
+      "example": "Das ist nicht gut."
+    },
+    "back": {
+      "meaning": "not"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "nichts",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Ich habe nichts."
+    },
+    "back": {
+      "meaning": "nothing"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "nie",
+      "article": "",
+      "type": "Adverb",
+      "example": "Das mache ich nie."
+    },
+    "back": {
+      "meaning": "never"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "noch",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich bin noch hier."
+    },
+    "back": {
+      "meaning": "still"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "normal",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist normal."
+    },
+    "back": {
+      "meaning": "normal"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "nur",
+      "article": "",
+      "type": "Adverb",
+      "example": "Nur du kannst."
+    },
+    "back": {
+      "meaning": "only"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "oben",
+      "article": "",
+      "type": "Adverb",
+      "example": "Der Tisch ist oben."
+    },
+    "back": {
+      "meaning": "above, upstairs"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "oder",
+      "article": "",
+      "type": "Conjunction",
+      "example": "Tee oder Kaffee."
+    },
+    "back": {
+      "meaning": "or"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "oft",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich gehe oft dort."
+    },
+    "back": {
+      "meaning": "often"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ohne",
+      "article": "",
+      "type": "Preposition",
+      "example": "Ohne Zcker."
+    },
+    "back": {
+      "meaning": "without"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Pommes frites",
+      "article": "die",
+      "type": "Noun",
+      "example": "Pommes Frites sind lecker."
+    },
+    "back": {
+      "meaning": "french fries"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "pünktlich",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Zug ist pünktlich."
+    },
+    "back": {
+      "meaning": "punctual"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Rad fahren",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich fahre Rad."
+    },
+    "back": {
+      "meaning": "to bike"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "rauchen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich rauche nicht."
+    },
+    "back": {
+      "meaning": "to smoke"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "regnen",
+      "article": "",
+      "type": "Verb",
+      "example": "Es regnet."
+    },
+    "back": {
+      "meaning": "to rain"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "richtig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist richtig."
+    },
+    "back": {
+      "meaning": "correct"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "riechen",
+      "article": "",
+      "type": "Verb",
+      "example": "Das riecht gut."
+    },
+    "back": {
+      "meaning": "to smell"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "ruhig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Ort ist ruhig."
+    },
+    "back": {
+      "meaning": "quiet"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Satz",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Satz ist kurz."
+    },
+    "back": {
+      "meaning": "sentence"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "S-Bahn",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die S-Bahn ist schnell."
+    },
+    "back": {
+      "meaning": "commuter train"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Schalter",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Schalter ist klein."
+    },
+    "back": {
+      "meaning": "counter"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "scheinen",
+      "article": "",
+      "type": "Verb",
+      "example": "Die Sonne scheint."
+    },
+    "back": {
+      "meaning": "to seem, shine"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schicken",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich schicke einen Brief."
+    },
+    "back": {
+      "meaning": "to send"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schlafen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich schlafe."
+    },
+    "back": {
+      "meaning": "to sleep"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schlecht",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist schlecht."
+    },
+    "back": {
+      "meaning": "bad"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "See",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der See ist groß."
+    },
+    "back": {
+      "meaning": "lake"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Sehenswürdigkeit",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Sehenswürdigkeit ist Ort."
+    },
+    "back": {
+      "meaning": "attraction"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sie",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Sie ist Frau."
+    },
+    "back": {
+      "meaning": "she, you (formal)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Sie",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Sie ist Frau."
+    },
+    "back": {
+      "meaning": "she, you (formal)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Sofa",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Sofa ist bequem."
+    },
+    "back": {
+      "meaning": "sofa"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Sohn",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Sohn ist Junge."
+    },
+    "back": {
+      "meaning": "son"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Sonne",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Sonne ist warm."
+    },
+    "back": {
+      "meaning": "sun"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Speisekarte",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Speisekarte ist Menu."
+    },
+    "back": {
+      "meaning": "menu"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Sport",
+      "article": "der",
+      "type": "Noun",
+      "example": "Sport ist Aktivität."
+    },
+    "back": {
+      "meaning": "sport"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Sprache",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Sprache ist wichtig."
+    },
+    "back": {
+      "meaning": "language"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Stadt",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Stadt ist groß."
+    },
+    "back": {
+      "meaning": "city"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Stelle",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Stelle ist Job."
+    },
+    "back": {
+      "meaning": "position"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "stellen",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Stellen sind Positionen."
+    },
+    "back": {
+      "meaning": "positions"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Stock",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Stock ist Etage."
+    },
+    "back": {
+      "meaning": "floor"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Straße",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Straße ist breit."
+    },
+    "back": {
+      "meaning": "street"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Straßenbahn",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Straßenbahn ist Fahrzeug."
+    },
+    "back": {
+      "meaning": "streetcar"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Studium",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Studium ist lang."
+    },
+    "back": {
+      "meaning": "studies"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Student",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Student ist jung."
+    },
+    "back": {
+      "meaning": "student (M)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Stunde",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Stunde ist 60 Minuten."
+    },
+    "back": {
+      "meaning": "hour"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Tasche",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Tasche ist nützlich."
+    },
+    "back": {
+      "meaning": "bag"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Taxi",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Taxi ist Auto."
+    },
+    "back": {
+      "meaning": "taxi"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Tee",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Tee ist heiß."
+    },
+    "back": {
+      "meaning": "tea"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Teil",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Teil ist Stück."
+    },
+    "back": {
+      "meaning": "part"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Telefon",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Telefon ist wichtig."
+    },
+    "back": {
+      "meaning": "phone"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Termin",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Termin ist Uhrzeit."
+    },
+    "back": {
+      "meaning": "appointment"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Test",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Test ist Prüfung."
+    },
+    "back": {
+      "meaning": "test"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Text",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Text ist Wort."
+    },
+    "back": {
+      "meaning": "text"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Thema",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Thema ist Ort."
+    },
+    "back": {
+      "meaning": "topic"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Ticket",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Ticket ist Fahrkarte."
+    },
+    "back": {
+      "meaning": "ticket"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Tisch",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Tisch ist Möbel."
+    },
+    "back": {
+      "meaning": "table"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Tochter",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Tochter ist Mädchen."
+    },
+    "back": {
+      "meaning": "daughter"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Toilette",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Toilette ist Badezimmer."
+    },
+    "back": {
+      "meaning": "toilet"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Tomate",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Tomate ist rot."
+    },
+    "back": {
+      "meaning": "tomato"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Treppe",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Treppe ist Stufen."
+    },
+    "back": {
+      "meaning": "stairs"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Uhr",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Uhr zeigt Zeit."
+    },
+    "back": {
+      "meaning": "clock, watch"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Unterricht",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Unterricht ist Lektion."
+    },
+    "back": {
+      "meaning": "instruction"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Unterschrift",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Unterschrift ist Name."
+    },
+    "back": {
+      "meaning": "signature"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Urlaub",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Urlaub ist Zeit."
+    },
+    "back": {
+      "meaning": "vacation"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Vater",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Vater ist Papa."
+    },
+    "back": {
+      "meaning": "father"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Verein",
+      "article": "der",
+      "type": "Noun",
+      "example": "Ein Verein ist Organisation."
+    },
+    "back": {
+      "meaning": "club"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Verkäufer",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Verkäufer sind Menschen."
+    },
+    "back": {
+      "meaning": "salesmen"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Vermieter",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Vermieter sind Eigentümer."
+    },
+    "back": {
+      "meaning": "landlords"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Verwandte",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Verwandte ist Verwandtschaft."
+    },
+    "back": {
+      "meaning": "relative (F)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Vorname",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Vorname ist Name."
+    },
+    "back": {
+      "meaning": "first name"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Vorsicht",
+      "article": "die",
+      "type": "Noun",
+      "example": "Vorsicht ist wichtig."
+    },
+    "back": {
+      "meaning": "caution"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Vorwahl",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Vorwahl ist Nummer."
+    },
+    "back": {
+      "meaning": "area code"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Wein",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Wein ist Getränk."
+    },
+    "back": {
+      "meaning": "wine"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Welt",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Welt ist groß."
+    },
+    "back": {
+      "meaning": "world"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Wetter",
+      "article": "das",
+      "type": "Noun",
+      "example": "Das Wetter ist schön."
+    },
+    "back": {
+      "meaning": "weather"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Wiederhören",
+      "article": "das",
+      "type": "Noun",
+      "example": "Auf Wiederhören."
+    },
+    "back": {
+      "meaning": "goodbye (phone)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Wiedersehen",
+      "article": "das",
+      "type": "Noun",
+      "example": "Auf Wiedersehen."
+    },
+    "back": {
+      "meaning": "goodbye"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Wind",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Wind ist stark."
+    },
+    "back": {
+      "meaning": "wind"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Wohnung",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Wohnung ist groß."
+    },
+    "back": {
+      "meaning": "apartment"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Wort",
+      "article": "das",
+      "type": "Noun",
+      "example": "Ein Wort ist Sprache."
+    },
+    "back": {
+      "meaning": "word"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Zigarette",
+      "article": "die",
+      "type": "Noun",
+      "example": "Eine Zigarette ist schlecht."
+    },
+    "back": {
+      "meaning": "cigarette"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Zimmer",
+      "article": "die",
+      "type": "Noun",
+      "example": "Die Zimmer sind Räume."
+    },
+    "back": {
+      "meaning": "rooms"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Zoll",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Zoll ist Grenze."
+    },
+    "back": {
+      "meaning": "customs, inch"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Zug",
+      "article": "der",
+      "type": "Noun",
+      "example": "Der Zug ist schnell."
+    },
+    "back": {
+      "meaning": "train"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "möchten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich möchte Tee."
+    },
+    "back": {
+      "meaning": "would like"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "öffnen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich öffne die Tür."
+    },
+    "back": {
+      "meaning": "to open"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schließen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich schließe die Tür."
+    },
+    "back": {
+      "meaning": "to close"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schmecken",
+      "article": "",
+      "type": "Verb",
+      "example": "Das schmeckt gut."
+    },
+    "back": {
+      "meaning": "to taste"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schnell",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist schnell."
+    },
+    "back": {
+      "meaning": "fast"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schon",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich bin schon da."
+    },
+    "back": {
+      "meaning": "already"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schön",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist schön."
+    },
+    "back": {
+      "meaning": "beautiful"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schreiben",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich schreibe Brief."
+    },
+    "back": {
+      "meaning": "to write"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schwer",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist schwer."
+    },
+    "back": {
+      "meaning": "heavy, difficult"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "schwimmen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich schwimme."
+    },
+    "back": {
+      "meaning": "to swim"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich sehe dich."
+    },
+    "back": {
+      "meaning": "to see"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sehr",
+      "article": "",
+      "type": "Adverb",
+      "example": "Das ist sehr gut."
+    },
+    "back": {
+      "meaning": "very"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sein",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich bin hier."
+    },
+    "back": {
+      "meaning": "to be"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "seit",
+      "article": "",
+      "type": "Preposition",
+      "example": "Seit Januar."
+    },
+    "back": {
+      "meaning": "since"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "selbstständig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Er ist selbstständig."
+    },
+    "back": {
+      "meaning": "independent"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sich",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Sie waschen sich."
+    },
+    "back": {
+      "meaning": "herself/themselves"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sitzen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich sitze."
+    },
+    "back": {
+      "meaning": "to sit"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "so",
+      "article": "",
+      "type": "Adverb",
+      "example": "So ist es."
+    },
+    "back": {
+      "meaning": "so, thus"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sofort",
+      "article": "",
+      "type": "Adverb",
+      "example": "Sofort komme ich."
+    },
+    "back": {
+      "meaning": "immediately"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sollen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich soll gehen."
+    },
+    "back": {
+      "meaning": "should, to be supposed to"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "spät",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist spät."
+    },
+    "back": {
+      "meaning": "late"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "später",
+      "article": "",
+      "type": "Adverb",
+      "example": "Später komme ich."
+    },
+    "back": {
+      "meaning": "later"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "spielen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich spiele Fußball."
+    },
+    "back": {
+      "meaning": "to play"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "sprechen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich spreche Deutsch."
+    },
+    "back": {
+      "meaning": "to speak"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "stehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich stehe auf."
+    },
+    "back": {
+      "meaning": "to stand"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "studieren",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich studiere Medizin."
+    },
+    "back": {
+      "meaning": "to study"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "suchen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich suche meinen Schlüssel."
+    },
+    "back": {
+      "meaning": "to search"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "tanzen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich tanze."
+    },
+    "back": {
+      "meaning": "to dance"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "telefonieren",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich telefoniere mit dir."
+    },
+    "back": {
+      "meaning": "to telephone"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "teuer",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist teuer."
+    },
+    "back": {
+      "meaning": "expensive"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "tot",
+      "article": "",
+      "type": "Adjective",
+      "example": "Der Mann ist tot."
+    },
+    "back": {
+      "meaning": "dead"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "treffen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich treffe dich."
+    },
+    "back": {
+      "meaning": "to meet"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "trinken",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich trinke Wasser."
+    },
+    "back": {
+      "meaning": "to drink"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "tschüss",
+      "article": "",
+      "type": "Interjection",
+      "example": "Tschüss."
+    },
+    "back": {
+      "meaning": "bye"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "tun",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich tue es."
+    },
+    "back": {
+      "meaning": "to do"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "über",
+      "article": "",
+      "type": "Preposition",
+      "example": "Über dem Tisch."
+    },
+    "back": {
+      "meaning": "over, above"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "übernachten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich übernachte hier."
+    },
+    "back": {
+      "meaning": "to stay overnight"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "überweisen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich überweise Geld."
+    },
+    "back": {
+      "meaning": "to transfer"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "um",
+      "article": "",
+      "type": "Preposition",
+      "example": "Um zehn Uhr."
+    },
+    "back": {
+      "meaning": "around, for"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "umziehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich ziehe um."
+    },
+    "back": {
+      "meaning": "to move (house)"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "und",
+      "article": "",
+      "type": "Conjunction",
+      "example": "Tee und Kaffee."
+    },
+    "back": {
+      "meaning": "and"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "unser",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Das ist unser Haus."
+    },
+    "back": {
+      "meaning": "our"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "unten",
+      "article": "",
+      "type": "Adverb",
+      "example": "Der Tisch ist unten."
+    },
+    "back": {
+      "meaning": "below, downstairs"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "unter",
+      "article": "",
+      "type": "Preposition",
+      "example": "Unter dem Tisch."
+    },
+    "back": {
+      "meaning": "under"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "unterschreiben",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich unterschreibe."
+    },
+    "back": {
+      "meaning": "to sign"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "verboten",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist verboten."
+    },
+    "back": {
+      "meaning": "forbidden"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "verdienen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich verdiene Geld."
+    },
+    "back": {
+      "meaning": "to earn"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "verheiratet",
+      "article": "",
+      "type": "Adjective",
+      "example": "Ich bin verheiratet."
+    },
+    "back": {
+      "meaning": "married"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "verkaufen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich verkaufe das Auto."
+    },
+    "back": {
+      "meaning": "to sell"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "vermieten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich vermiete Zimmer."
+    },
+    "back": {
+      "meaning": "to rent out"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "verstehen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich verstehe."
+    },
+    "back": {
+      "meaning": "to understand"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "viel",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist viel."
+    },
+    "back": {
+      "meaning": "much, a lot"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "vielleicht",
+      "article": "",
+      "type": "Adverb",
+      "example": "Vielleicht morgen."
+    },
+    "back": {
+      "meaning": "maybe"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "von",
+      "article": "",
+      "type": "Preposition",
+      "example": "Das Buch von Max."
+    },
+    "back": {
+      "meaning": "from, of"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "vor",
+      "article": "",
+      "type": "Preposition",
+      "example": "Vor dem Haus."
+    },
+    "back": {
+      "meaning": "before, in front of"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "vorstellen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich stelle mich vor."
+    },
+    "back": {
+      "meaning": "to introduce"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wandern",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich wandere."
+    },
+    "back": {
+      "meaning": "to hike"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wann",
+      "article": "",
+      "type": "Adverb",
+      "example": "Wann kommst du."
+    },
+    "back": {
+      "meaning": "when"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "warten",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich warte."
+    },
+    "back": {
+      "meaning": "to wait"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "warum",
+      "article": "",
+      "type": "Adverb",
+      "example": "Warum machst du das."
+    },
+    "back": {
+      "meaning": "why"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "was",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Was ist das."
+    },
+    "back": {
+      "meaning": "what"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "was für ein",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Was für ein Auto."
+    },
+    "back": {
+      "meaning": "what kind of"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "waschen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich wasche mich."
+    },
+    "back": {
+      "meaning": "to wash"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "weh tun",
+      "article": "",
+      "type": "Verb",
+      "example": "Das tut weh."
+    },
+    "back": {
+      "meaning": "to hurt"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "weiblich",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist weiblich."
+    },
+    "back": {
+      "meaning": "female"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "weit",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist weit."
+    },
+    "back": {
+      "meaning": "far"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "weiter",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich gehe weiter."
+    },
+    "back": {
+      "meaning": "further, continue"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wenig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist wenig."
+    },
+    "back": {
+      "meaning": "little, few"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wer",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Wer ist das."
+    },
+    "back": {
+      "meaning": "who"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "werden",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich werde Arzt."
+    },
+    "back": {
+      "meaning": "to become"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wichtig",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist wichtig."
+    },
+    "back": {
+      "meaning": "important"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wie",
+      "article": "",
+      "type": "Adverb",
+      "example": "Wie geht es dir."
+    },
+    "back": {
+      "meaning": "how"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wiederholen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich wiederhole es."
+    },
+    "back": {
+      "meaning": "to repeat"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wie viel",
+      "article": "",
+      "type": "Adverb",
+      "example": "Wie viel ist das."
+    },
+    "back": {
+      "meaning": "how much"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "willkommen",
+      "article": "",
+      "type": "Adjective",
+      "example": "Du bist willkommen."
+    },
+    "back": {
+      "meaning": "welcome"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wir",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Wir sind hier."
+    },
+    "back": {
+      "meaning": "we"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wissen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich weiß es."
+    },
+    "back": {
+      "meaning": "to know"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wo",
+      "article": "",
+      "type": "Adverb",
+      "example": "Wo bist du."
+    },
+    "back": {
+      "meaning": "where"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "woher",
+      "article": "",
+      "type": "Adverb",
+      "example": "Woher kommst du."
+    },
+    "back": {
+      "meaning": "where from"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wohin",
+      "article": "",
+      "type": "Adverb",
+      "example": "Wohin gehst du."
+    },
+    "back": {
+      "meaning": "where to"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wohnen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich wohne in Berlin."
+    },
+    "back": {
+      "meaning": "to live"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wollen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich will gehen."
+    },
+    "back": {
+      "meaning": "to want"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "wunderbar",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist wunderbar."
+    },
+    "back": {
+      "meaning": "wonderful"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "zahlen",
+      "article": "",
+      "type": "Verb",
+      "example": "Ich zahle die Rechnung."
+    },
+    "back": {
+      "meaning": "to pay"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "zurzeit",
+      "article": "",
+      "type": "Adverb",
+      "example": "Zurzeit bin ich hier."
+    },
+    "back": {
+      "meaning": "at the moment"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "zu",
+      "article": "",
+      "type": "Preposition",
+      "example": "Zu dir."
+    },
+    "back": {
+      "meaning": "to, at"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "zufrieden",
+      "article": "",
+      "type": "Adjective",
+      "example": "Ich bin zufrieden."
+    },
+    "back": {
+      "meaning": "satisfied"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "zurück",
+      "article": "",
+      "type": "Adverb",
+      "example": "Ich komme zurück."
+    },
+    "back": {
+      "meaning": "back"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "zusammen",
+      "article": "",
+      "type": "Adverb",
+      "example": "Wir gehen zusammen."
+    },
+    "back": {
+      "meaning": "together"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "zwischen",
+      "article": "",
+      "type": "Preposition",
+      "example": "Zwischen dir und mir."
+    },
+    "back": {
+      "meaning": "between"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "Lieblings-",
+      "article": "die",
+      "type": "Adjective",
+      "example": "Das ist Lieblings-."
+    },
+    "back": {
+      "meaning": "favorite"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "meist-",
+      "article": "",
+      "type": "Adjective",
+      "example": "Das ist meist-."
+    },
+    "back": {
+      "meaning": "most"
+    }
+  },
+  {
+    "level": "A1",
+    "front": {
+      "word": "welch-",
+      "article": "",
+      "type": "Pronoun",
+      "example": "Welch- Auto magst du."
+    },
+    "back": {
+      "meaning": "which"
+    }
+  }
+]
